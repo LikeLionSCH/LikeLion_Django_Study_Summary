@@ -1,8 +1,6 @@
 import os
 
-list = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, "A"
-]
+list = list(filter(os.path.isdir, os.listdir(os.getcwd())))
 count = 0
 sum = 0
 

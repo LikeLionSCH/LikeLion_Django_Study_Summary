@@ -19,7 +19,6 @@ Example input
 
 Example output
 13
-
 '''
 N = int(input())
 sum = 0
