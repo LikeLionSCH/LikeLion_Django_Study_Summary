@@ -29,3 +29,7 @@ deactivate
 ```
 pip install django
 ```
+
+<br/>
+
+### 1주차 - 2.Hello World 이론
