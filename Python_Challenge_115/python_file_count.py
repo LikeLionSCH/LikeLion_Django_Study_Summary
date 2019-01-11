@@ -1,6 +1,6 @@
 import os
 
-list = list(filter(os.path.isdir, os.listdir(os.getcwd())))
+list = sorted(list(filter(os.path.isdir, os.listdir(os.getcwd()))))
 count = 0
 sum = 0
 
