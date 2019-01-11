@@ -12,7 +12,7 @@ Department of<br/> Computer Software Engineering
 [[Cheat Sheet]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Cheat_Sheet.md)
 
 ### 도전! 파이썬 115제
-#### 66 / 115
+#### 82 / 115
 [[Code]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/tree/master/Python_Challenge_115)
 
 ### 수업 자료
