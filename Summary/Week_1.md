@@ -11,6 +11,7 @@ python -m venv myvenv(가상환경명)
 
 **가상환경 실행하기**
 ```
+source myvenv/Scripts/activate
 source myvenv/bin/activate
 ```
 
