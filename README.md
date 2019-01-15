@@ -22,3 +22,11 @@ Department of<br/> Computer Software Engineering
 1주차 - 2.Hello World 이론 **[진행중]**<br/>
 1주차 - 3.Hello World 실습 **[진행중]**<br/>
 1.5주차 - MTV 패턴 **[진행중]**<br/>
+
+<br/>
+
+[[Week 2]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_2.md)<br/>
+2주자 - 1.wordcount 이론 **[진행중]**<br/>
+2주차 - 1.wordcount 실습 part 1 **[진행중]**<br/>
+2주차 - 2.wordcount 실습 part 2 **[진행중]**<br/>
+2.5주차 - Git **[진행중]**<br/>
