@@ -5,14 +5,10 @@
 2. 작업 디렉토리 만들기
 3. `python` 설치 확인하기
 
-<br/>
-
 #### VENV 생성 & 가상환경 실행
 ```
 python -m venv myvenv(가상환경명)
 ```
-
-<br/>
 
 #### 가상환경 실행하기
 ```
@@ -29,8 +25,6 @@ source myvenv/bin/activate
 deactivate
 ```
 
-<br/>
-
 #### Django 설치하기
 > 가상환경을 실행하고 설치
 
@@ -46,26 +40,18 @@ pip install django
 오늘 모든 것을 이해하려 하진 말자<br/>
 (돌아왔 때 비로소 이해되는 부분들도 있다.)<br/>
 
-<br/>
-
 #### 학습 목표<br/>
 `Django`내에서의 **정보**의 흐름<br/>
 여기에서 **정보**란 `HTML`파일<br/>
-
-<br/>
 
 #### `Django`는 어떻게 작동할까?<br/>
 파일 및 폴더간의 **티키타카**(상호작용)으로 작동<br/>
 `Django`를 시작하기 위해선 장고 **프로젝트 생성** 필요<br/>
 
-<br/>
-
-#### `Django`프로젝트 생성 명령어**
+#### `Django`프로젝트 생성 명령어
 ```
 django-admin startproject <project 이름>
 ```
-
-<br/>
 
 #### 생성되는 파일 및 폴더 구조<br/>
 manage.py<br/>
@@ -77,28 +63,19 @@ Project이름으로 된 `폴더`<br/>
 └─ `url.py`<br/>
 ※ `manage.py`파일로 서버를 돌린다.<br/>
 
-<br/>
-
 #### `Django` 서버 작동 명령어
 ```
 python manage.py runserver
 ```
 
-<br/>
-
 #### App
 > 프로젝트의 구성 단위<br/>
 > `App`폴더 안의 파일들 간의 티키타카
-
-
-<br/>
 
 #### App 생성 명령어
 ```
 python manage.py startapp <app이름>
 ```
-
-<br/>
 
 #### App 폴더 구조
 `App` 이름으로 된 폴더<br/>
@@ -110,8 +87,6 @@ python manage.py startapp <app이름>
 ├─ `models.py`<br/>
 ├─ `test.py`<br/>
 └─ `views.py`<br/>
-
-<br/>
 
 #### 지금 알아둬야 할 폴더와 파일 역할
 **settings.py**<br/>
@@ -131,24 +106,24 @@ python manage.py startapp <app이름>
 <br/>
 
 ### 1주차 - 3.Hello World 실습
-**1. 가상 환경을 켜고 시작**
+#### 1. 가상 환경을 켜고 시작
 ```
 source myvenv/bin/activate
 ```
 
-**2. 프로젝트 생성**
+#### 2. 프로젝트 생성
 ```
 django-admin startproject <project 이름>
 ```
 **Result**<br/>
 `<project 이름>`의 폴더 생성
 
-**3. 프로젝트 경로 이동**
+#### 3. 프로젝트 경로 이동
 ```
 cd <project 이름>
 ```
 
-**4. Django 서버 구동**
+#### 4. Django 서버 구동
 ```
 python manage.py runserver
 ```
@@ -158,23 +133,23 @@ http://127.0.0.1:8000/ 와 같은 local주소 확인 가능
 서버 종료 : `ctrl` + `c`<br/>
 db.sqlite3 : 데이터 베이스를 담당하는 파일<br/>
 
-**5. App 생성**
+#### 5. App 생성
 ```
 python manage.py startapp <app 이름>
 ```
 **Result**<br/>
 `<app 이름>`의 폴더 생성
 
-**6. templates 폴더 생성**<br/>
+#### 6. templates 폴더 생성<br/>
 사용자에게 보여질 `html`파일을 담을 폴더 생성
 
-**7. settings.py에 App 추가**<br/>
+#### 7. settings.py에 App 추가**
 `<project 이름>` 폴더의 `settings.py`의<br/>
 `INSTALLED_APPS` 리스트에 `'myapp.apps.MyappConfig'`와<br/>
 같이 `<App 이름>`의 경로 추가<br/>
 필자의 `App` 이름은 `myapp`
 
-**8. html파일을 처리할 함수 정의**<br/>
+#### 8. html파일을 처리할 함수 정의<br/>
 `<App 이름>`의 폴더의 `views.py`파일에
 ```python
 def home(request):
@@ -182,7 +157,7 @@ def home(request):
 ```
 다음과 같이 `home.html` 처리 함수 정의
 
-**9. home.html의 url설계**<br/>
+#### 9. home.html의 url설계
 `<project 이름>`폴더의 `urls.py` 조작
 
 1. myapp의 `views.py`를 `urls.py`에 import
@@ -209,5 +184,9 @@ urlpatterns = [
 ]
 ```
 
-**10. 파일 설정 후 서버 구동 테스트**<br/>
+#### 10. 파일 설정 후 서버 구동 테스트<br/>
 <img src="Week_1_3_Test_Image.png" width="400" height="auto">
+
+<br/>
+
+### 1.5주차 - MTV 패턴
