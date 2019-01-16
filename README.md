@@ -19,7 +19,7 @@ Department of<br/> Computer Software Engineering
 [[Week 1]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_1.md)<br/>
 0주자 - 1.오리엔테이션 **[완료]**<br/>
 1주차 - 1.기본환경 셋팅 **[완료]**<br/>
-1주차 - 2.Hello World 이론 **[진행중]**<br/>
+1주차 - 2.Hello World 이론 **[완료]**<br/>
 1주차 - 3.Hello World 실습 **[진행중]**<br/>
 1.5주차 - MTV 패턴 **[진행중]**<br/>
 
