@@ -20,7 +20,7 @@ Department of<br/> Computer Software Engineering
 0주자 - 1.오리엔테이션 **[완료]**<br/>
 1주차 - 1.기본환경 셋팅 **[완료]**<br/>
 1주차 - 2.Hello World 이론 **[완료]**<br/>
-1주차 - 3.Hello World 실습 **[진행중]**<br/>
+1주차 - 3.Hello World 실습 **[완료]**<br/>
 1.5주차 - MTV 패턴 **[진행중]**<br/>
 
 <br/>
