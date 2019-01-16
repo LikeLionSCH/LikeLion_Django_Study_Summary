@@ -113,22 +113,17 @@ python manage.py startapp <app이름>
 
 <br/>
 
-#### settings.py
+#### 지금 알아둬야 할 폴더와 파일 역할
+**settings.py**<br/>
 `app` 폴더의 위치와 설정을 저장
 
-<br/>
-
-#### templates 폴더
+**templates 폴더**<br/>
 사용자에게 보여질 화면(html)을 저장
 
-<br/>
-
-#### views.py
+**views.py**<br/>
 사용자에게 보여질 화면(html)이 언제, 어떻게<br/>
 처리될지 알려주는 **함수** 작성
 
-<br/>
-
-#### url.py
+**url.py**<br/>
 작성한 html이 어떤 `url**을 입력했을 때<br/>
 보여지게할지 설정
