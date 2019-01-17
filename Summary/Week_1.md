@@ -143,7 +143,7 @@ python manage.py startapp <app 이름>
 #### 6. templates 폴더 생성<br/>
 사용자에게 보여질 `html`파일을 담을 폴더 생성
 
-#### 7. settings.py에 App 추가**
+#### 7. settings.py에 App 추가
 `<project 이름>` 폴더의 `settings.py`의<br/>
 `INSTALLED_APPS` 리스트에 `'myapp.apps.MyappConfig'`와<br/>
 같이 `<App 이름>`의 경로 추가<br/>
