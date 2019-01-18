@@ -128,4 +128,4 @@ URL 생성
 ```
 
 **알아두면 좋은 것**<br/>
-템플릿 상속 : [[블로그]](http://rednooby.tistory.com/94)
+템플릿 상속 : [링크](http://rednooby.tistory.com/94)
