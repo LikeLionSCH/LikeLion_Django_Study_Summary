@@ -26,7 +26,7 @@ Department of<br/> Computer Software Engineering
 <br/>
 
 [[Week 2]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_2.md)<br/>
-2주자 - 1.wordcount 이론 **[진행중]**<br/>
-2주차 - 1.wordcount 실습 part 1 **[진행중]**<br/>
-2주차 - 2.wordcount 실습 part 2 **[진행중]**<br/>
+2주자 - 1.wordcount 이론 **[완료]**<br/>
+2주차 - 2.wordcount 실습 part 1 **[진행중]**<br/>
+2주차 - 3.wordcount 실습 part 2 **[진행중]**<br/>
 2.5주차 - Git **[진행중]**<br/>
