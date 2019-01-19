@@ -1,0 +1,52 @@
+h1 {
+    color: orange;
+    font-size: 60px;
+    padding-bottom: 60px;
+}
+
+#likelion {
+    color: orange;
+    font-size: 30px;
+}
+
+#about {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#back_home {
+    font-size: 30px;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: #ffffff;
+    padding: 5px 0px 5px 0px;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: orange;
+    font-weight: bold;
+}
+
+#word_count_info {
+    padding-top: 40px;
+}
+
+#word_count_info h1 {
+    color: #ffffff;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+#word_count_info p {
+    padding-bottom: 10px;
+}

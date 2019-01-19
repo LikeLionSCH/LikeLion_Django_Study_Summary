@@ -2,25 +2,41 @@
 
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
 
-        <link rel="stylesheet" href="{% static './css/style.css' %}">
-        <link rel="stylesheet" href="{% static './css/about.css' %}">
+<head>
+    <meta charset="utf-8">
 
-        <title>Word Count About</title>
-    </head>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" href="{% static './css/about.css' %}">
 
-    <body>
-        <div id="wrapper">
-            <h1>About</h1>
+    <title>Word Count About</title>
+</head>
 
-            <p>
-                안녕하세요, 이곳은 글자를 세주는 멋쟁이 사자처럼의 워드카운트 웹페이지 입니다.
-                여기에서 글자를 세세요.
+<body>
+    <div id="wrapper">
+        <h1>About</h1>
+
+        <div id="about">
+            <p>안녕하세요.</p>
+            <p>여기는
+                <strong id="likelion">
+                    멋쟁이 사자처럼
+                </strong>의
             </p>
+            <p>Word Count 프로그램 홈페이지 입니다.</p>
+        </div>
 
+        <div id="word_count_info">
+            <h1>Word Count란?</h1>
+
+            <p>입력받은 문장의 단어의 빈도를</p>
+            <p>출력하는 프로그램 입니다.</p>
+        </div>
+
+        <div id="back_home">
             <a href="{% url 'home' %}">Home 으로 돌아가기</a>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

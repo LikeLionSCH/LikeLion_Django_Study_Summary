@@ -1,0 +1,43 @@
+#word_result {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+#count {
+    color: orange;
+    font-size: 50px;
+}
+
+#retry {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#retry:hover {
+    color: orange;
+    font-weight: bold;
+}
+
+#bottom_border {
+    padding-top: 10px;
+    width: 80%;
+    border-bottom: 1px solid #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#text {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#word_count {
+    color: #ffffff;
+    font-size: 20px;
+}

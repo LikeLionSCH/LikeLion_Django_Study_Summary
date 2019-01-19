@@ -2,27 +2,31 @@
 
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
 
-        <link rel="stylesheet" href="{% static './css/style.css' %}">
-        <link rel="stylesheet" href="{% static './css/home.css' %}">
+<head>
+    <meta charset="utf-8">
 
-        <title>Word Count Main</title>
-    </head>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" href="{% static './css/home.css' %}">
 
-    <body>
-        <div id="wrapper">
-            <h1>안녕하세요, 여기에서 글자를 세세요!</h1>
+    <title>Word Count Main</title>
+</head>
 
-            <a href="{% url 'about' %}">About</a>
+<body>
+    <div id="wrapper">
+        <h1>안녕하세요.</h1>
+        <h1>여기에서 단어의 개수를 세세요!</h1>
 
-            <form action="{% url 'result' %}">
-                <textarea name="fulltext" rows="10" cols="40">
-                </textarea>
-                <br/>
-                <input type="submit" name="" value="Count!">
-            </form>
+        <div id="about_div">
+            <a href="{% url 'about' %}" id="about">About</a>
         </div>
-    </body>
+
+        <form action="{% url 'result' %}">
+            <textarea name="fulltext" rows="10" cols="50" id="input" onclick="this.value=''">글을 입력하세요.</textarea>
+            <br />
+            <input type="submit" id="subit_button" value="Count!">
+        </form>
+    </div>
+</body>
+
 </html>

@@ -2,29 +2,39 @@
 
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
 
-        <link rel="stylesheet" href="{% static './css/style.css' %}">
-        <link rel="stylesheet" href="{% static './css/result.css' %}">
+<head>
+    <meta charset="utf-8">
 
-        <title>Word Count Result</title>
-    </head>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" href="{% static './css/result.css' %}">
 
-    <body>
-        <div id="wrapper">
-            <h1>당신이 입력한 텍스트는 {{ total }}개로 구성되어 있습니다.</h1>
+    <title>Word Count Result</title>
+</head>
 
-            <a href="{% url 'home' %}"> 다시 하기 </a>
-            <br/>
+<body>
+    <div id="wrapper">
+        <h1 id="word_result">
+            당신이 입력한 텍스트는
+            <strong id="count">{{ total }}</strong>
+             개로 구성되어 있습니다.
+         </h1>
 
-            <h2> 입력한 텍스트 : </h2>
+        <a href="{% url 'home' %}" id="retry"> 다시 하기 </a>
+        <br />
+
+        <p id="bottom_border"></p>
+
+        <h2>입력한 텍스트</h2>
+        <div id="text">
             {{ full }}
-
-            <h2> 단어 카운트 : </h2>
-            {% for word, count in dictionary %}
-                {{ word }} : {{ count }}<br/>
-            {% endfor %}
         </div>
-    </body>
+
+        <h2>단어 카운트</h2>
+        {% for word, count in dictionary %}
+        <p id=word_count>{{ word }} : {{ count }}<p/>
+        {% endfor %}
+    </div>
+</body>
+
 </html>

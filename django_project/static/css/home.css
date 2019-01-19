@@ -1,3 +1,52 @@
 h1 {
     color: orange;
+    margin-bottom: 15px;
+}
+
+#about_div {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    padding: 10px 0px 10px 0px;
+    margin-top: 40px;
+    width: 80%;
+}
+
+#about {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#about:hover {
+    color: orange;
+    font-weight: bold;
+}
+
+#input {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 40px;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 3px;
+    width: 75%;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#subit_button {
+    color: #ffffff;
+    border-width: 3px;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 10px 10px 10px 10px;
+    width: 80%;
+    line-height: 36px;
+}
+
+#subit_button:hover {
+    color: orange;
+    font-weight: bold;
 }
