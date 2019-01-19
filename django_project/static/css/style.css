@@ -1,0 +1,14 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+}

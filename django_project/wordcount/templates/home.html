@@ -1,10 +1,28 @@
-<h1>안녕하세요, 여기에서 글자를 세세요!</h1>
+{% load static %}
 
-<a href="{% url 'about' %}">About</a>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
 
-<form action="{% url 'result' %}">
-    <textarea name="fulltext" rows="10" cols="40">
-    </textarea>
-    <br/>
-    <input type="submit" name="" value="Count!">
-</form>
+        <link rel="stylesheet" href="{% static './css/style.css' %}">
+        <link rel="stylesheet" href="{% static './css/home.css' %}">
+
+        <title>Word Count Main</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h1>안녕하세요, 여기에서 글자를 세세요!</h1>
+
+            <a href="{% url 'about' %}">About</a>
+
+            <form action="{% url 'result' %}">
+                <textarea name="fulltext" rows="10" cols="40">
+                </textarea>
+                <br/>
+                <input type="submit" name="" value="Count!">
+            </form>
+        </div>
+    </body>
+</html>

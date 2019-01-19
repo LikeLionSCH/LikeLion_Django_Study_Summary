@@ -1,5 +1,26 @@
-<h1>About</h1>
+{% load static %}
 
-<p>안녕하세요, 이곳은 글자를 세주는 멋쟁이 사자처럼의 워드카운트 웹페이지 입니다. 여기에서 글자를 세세요</p>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
 
-<a href="{% url 'home' %}">Home 으로 돌아가기</a>
+        <link rel="stylesheet" href="{% static './css/style.css' %}">
+        <link rel="stylesheet" href="{% static './css/about.css' %}">
+
+        <title>Word Count About</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <h1>About</h1>
+
+            <p>
+                안녕하세요, 이곳은 글자를 세주는 멋쟁이 사자처럼의 워드카운트 웹페이지 입니다.
+                여기에서 글자를 세세요.
+            </p>
+
+            <a href="{% url 'home' %}">Home 으로 돌아가기</a>
+        </div>
+    </body>
+</html>
