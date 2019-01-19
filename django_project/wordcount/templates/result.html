@@ -15,10 +15,10 @@
 <body>
     <div id="wrapper">
         <h1 id="word_result">
-            당신이 입력한 텍스트는
+            입력한 텍스트는
             <strong id="count">{{ total }}</strong>
-             개로 구성되어 있습니다.
-         </h1>
+            개의 단어로 구성되어 있습니다.
+        </h1>
 
         <a href="{% url 'home' %}" id="retry"> 다시 하기 </a>
         <br />
@@ -32,7 +32,11 @@
 
         <h2>단어 카운트</h2>
         {% for word, count in dictionary %}
-        <p id=word_count>{{ word }} : {{ count }}<p/>
+        <p id="word_count">
+            {{ word }}
+            &nbsp; &nbsp;:&nbsp; &nbsp;
+            <strong id="count">{{ count }}</strong> 개
+        <p />
         {% endfor %}
     </div>
 </body>

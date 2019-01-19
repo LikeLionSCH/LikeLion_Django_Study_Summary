@@ -1,15 +1,33 @@
 * {
-  margin: 0 auto;
-  padding: 0;
-  background-color: black;
+    margin: 0 auto;
+    padding: 0;
+    background-color: black;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #wrapper {
     margin-top: 30px;
     width: 80%;
     text-align: center;
+}
+
+.social {
+    margin-top: 30px;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.social a i {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.social a i:hover {
+    color: orange;
+    font-size: 30px;
 }
