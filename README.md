@@ -31,10 +31,15 @@ Department of<br/> Computer Software Engineering
 2주차 - 3.wordcount 실습 part 2 **[완료]**<br/>
 2.5주차 - Git **[진행중]**<br/>
 
-[[Week 2 Homework]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/tree/master/django_project/wordcount)
+[[Week 2 Homework]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/tree/master/django_project/wordcount)<br/>
 **home.html**
-<img src="Homework/Week_2/Homework_TestImage_1.png" width="400" height="auto">
+
+<img src="./Homework/Week_2/Homework_TestImage_1.png" width="400" height="auto">
+
 **result.html**
-<img src="Homework/Week_2/Homework_TestImage_2.png" width="400" height="auto">
+
+<img src="./Homework/Week_2/Homework_TestImage_2.png" width="400" height="auto">
+
 **about.html**
-<img src="Homework/Week_2/Homework_TestImage_3.png" width="400" height="auto">
+
+<img src="./Homework/Week_2/Homework_TestImage_3.png" width="400" height="auto">
