@@ -34,12 +34,12 @@ Department of<br/> Computer Software Engineering
 [[Week 2 Homework]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/tree/master/django_project/wordcount)<br/>
 **home.html**
 
-<img src="https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Homework/Homework_TestImage_1.png" width="400" height="auto">
+<img src="./Homework/Week_2/Homework_TestImage_1.png" width="400" height="auto">
 
 **result.html**
 
-<img src="https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Homework/Homework_TestImage_2.png" width="400" height="auto">
+<img src="./Homework/Week_2/Homework_TestImage_2.png" width="400" height="auto">
 
 **about.html**
 
-<img src="https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Homework/Homework_TestImage_3.png" width="400" height="auto">
+<img src="./Homework/Week_2/Homework_TestImage_3.png" width="400" height="auto">
