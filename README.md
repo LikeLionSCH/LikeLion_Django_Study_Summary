@@ -35,12 +35,12 @@ Department of<br/> Computer Software Engineering
 
 **home.html**
 
-<img src="./Homework/Week_2/Homework_TestImage_1.png" width="400" height="auto">
+<img src="./Homework/Week_2/Homework_TestImage_1.png" width="500" height="auto">
 
 **result.html**
 
-<img src="./Homework/Week_2/Homework_TestImage_2.png" width="400" height="auto">
+<img src="./Homework/Week_2/Homework_TestImage_2.png" width="500" height="auto">
 
 **about.html**
 
-<img src="./Homework/Week_2/Homework_TestImage_3.png" width="400" height="auto">
+<img src="./Homework/Week_2/Homework_TestImage_3.png" width="500" height="auto">
