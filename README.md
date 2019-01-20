@@ -44,3 +44,11 @@ Department of<br/> Computer Software Engineering
 **about.html**
 
 <img src="./Homework/Week_2/Homework_TestImage_3.png" width="500" height="auto">
+
+<br/>
+
+[[Week 3]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_3.md)<br/>
+3주차 - 1.model&admin 이론 **[진행중]**<br/>
+3주차 - 2.model&admin 실습 **[진행중]**<br/>
+3주차 - 3.queryset & method **[진행중]**<br/>
+3.5주차 - bootstrap **[진행중]**<br/>

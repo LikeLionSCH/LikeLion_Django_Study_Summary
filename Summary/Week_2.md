@@ -339,3 +339,7 @@ return render(request, 'result.html',
 
 **테스트 이미지**<br/>
 <img src="Week_2_3_Test_Image_5.png" width="400" height="auto">
+
+<br/>
+
+### 2.5주차 - Git
