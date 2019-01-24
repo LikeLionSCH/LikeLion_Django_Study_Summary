@@ -49,6 +49,6 @@ Department of<br/> Computer Software Engineering
 
 [[Week 3]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_3.md)<br/>
 3주차 - 1.model&admin 이론 **[완료]**<br/>
-3주차 - 2.model&admin 실습 **[진행중]**<br/>
+3주차 - 2.model&admin 실습 **[완료]**<br/>
 3주차 - 3.queryset & method **[진행중]**<br/>
 3.5주차 - bootstrap **[진행중]**<br/>
