@@ -93,7 +93,7 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-**실행 결과**
+**실행 결과**<br/>
 <img src="Week_3_2_Test_Image_1.png" width="400" height="auto">
 
 #### 6. admin계정 생성
@@ -102,8 +102,8 @@ $ python manage.py migrate
 $ python manage.py createsuperuser
 ```
 
-**실행 결과**
-<img src="Week_3_2_Test_Image_2.png" width="400" height="auto">
+**실행 결과**<br/>
+<img src="Week_3_2_Test_Image_2.png" width="400" height="auto"><br/>
 <img src="Week_3_2_Test_Image_3.png" width="400" height="auto">
 
 #### 7. admin.py에 models.py에 정의한 Class 추가
@@ -126,7 +126,7 @@ from .models import Blog
 admin.site.register(Blog)
 ```
 
-**admin 사이트 실행 결과**
+**admin 사이트 실행 결과**<br/>
 <img src="Week_3_2_Test_Image_4.png" width="400" height="auto">
 
 #### 8. Blog Object를 제목으로 설정
