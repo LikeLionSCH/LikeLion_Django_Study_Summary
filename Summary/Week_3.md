@@ -103,8 +103,8 @@ $ python manage.py createsuperuser
 ```
 
 **실행 결과**<br/>
-<img src="Week_3_2_Test_Image_2.png" width="400" height="auto"><br/>
-<img src="Week_3_2_Test_Image_3.png" width="400" height="auto">
+<img src="Week_3_2_Test_Image_2.png" width="600" height="auto"><br/>
+<img src="Week_3_2_Test_Image_3.png" width="600" height="auto">
 
 #### 7. admin.py에 models.py에 정의한 Class 추가
 1. `admin.py`에 `models.py`의 `class` 선언
@@ -127,7 +127,7 @@ admin.site.register(Blog)
 ```
 
 **admin 사이트 실행 결과**<br/>
-<img src="Week_3_2_Test_Image_4.png" width="400" height="auto">
+<img src="Week_3_2_Test_Image_4.png" width="600" height="auto">
 
 #### 8. Blog Object를 제목으로 설정
 `class`내부에 `__str__`함수 정의
@@ -141,4 +141,4 @@ class Blog(models.Model):
         return self.title
 ```
 
-<img src="Week_3_2_Test_Image_5.png" width="400" height="auto">
+<img src="Week_3_2_Test_Image_5.png" width="600" height="auto">
