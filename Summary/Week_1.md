@@ -26,7 +26,7 @@ deactivate
 ```
 
 #### Django 설치하기
-> 가상환경을 실행하고 설치
+**가상환경을 실행하고 설치**
 
 ```
 pip install django
@@ -69,8 +69,8 @@ python manage.py runserver
 ```
 
 #### App
-> 프로젝트의 구성 단위<br/>
-> `App`폴더 안의 파일들 간의 티키타카
+프로젝트의 구성 단위<br/>
+`App`폴더 안의 파일들 간의 티키타카
 
 #### App 생성 명령어
 ```
