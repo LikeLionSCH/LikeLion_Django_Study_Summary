@@ -204,3 +204,7 @@ urlpatterns = [
     <br/>
 {% endfor %}
 ```
+
+<br/>
+
+### 3.5주차 - bootstrap

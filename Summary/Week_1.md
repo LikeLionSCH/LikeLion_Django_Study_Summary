@@ -59,7 +59,7 @@ Project이름으로 된 `폴더`<br/>
 ├─ `__pycache__`<br/>
 ├─ `__init__.py`<br/>
 ├─ `wsig.py`<br/>
-├─ `setting.p`y<br/>
+├─ `setting.py`<br/>
 └─ `url.py`<br/>
 ※ `manage.py`파일로 서버를 돌린다.<br/>
 
