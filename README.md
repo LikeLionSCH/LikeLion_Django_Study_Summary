@@ -52,3 +52,10 @@ Department of<br/> Computer Software Engineering
 3주차 - 2.model&admin 실습 **[완료]**<br/>
 3주차 - 3.queryset & method **[완료]**<br/>
 3.5주차 - bootstrap **[진행중]**<br/>
+
+<br/>
+
+[[Week 4]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_4.md)<br/>
+4주차 - 1. pk, path converter, get_object_or_404 **[진행중]**<br/>
+4주차 - 2. 실습과 강의 중반부 메세지 **[진행중]**<br/>
+4주차 - 3. blog project 1 **[진행중]**<br/>
