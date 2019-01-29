@@ -167,13 +167,13 @@ def detail(request, blog_id):
 ```
 
 #### 결과 화면
-**home.html**
+**home.html**<br/>
 <img src="Week_4_2_Test_Image_1.png" width="600" height="auto">
 
-**detail.html**
+**detail.html**<br/>
 <img src="Week_4_2_Test_Image_2.png" width="600" height="auto">
 
-**404 Not Found**
+**404 Not Found**<br/>
 <img src="Week_4_2_Test_Image_3.png" width="600" height="auto">
 
 #### 추가 내용
