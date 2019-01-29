@@ -6,7 +6,7 @@
     <h3> 본문 미리보기 </h3>
     <p>
         {{ blog.summary }}
-        <a href="#"> ...more </a>
+        <a href="{% url 'detail' blog.id %}"> ...more </a>
     </p>
     <br/>
     <br/>

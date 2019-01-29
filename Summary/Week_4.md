@@ -116,7 +116,7 @@ from django.shortcuts import render, get_object_or_404
 **blog_id를 pk로 사용하여** `get_object_or_404` **함수 사용**
 ```python
 def detail(request, blog_id):
-    blog_detail = Blog.get_object_or_404(Blog, pk=blog_id)
+    blog_detail = get_object_or_404(Blog, pk=blog_id)
 
     return render(request,
                   'detail.html',
