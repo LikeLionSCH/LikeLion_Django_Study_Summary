@@ -51,7 +51,7 @@ Department of<br/> Computer Software Engineering
 3주차 - 1.model&admin 이론 **[완료]**<br/>
 3주차 - 2.model&admin 실습 **[완료]**<br/>
 3주차 - 3.queryset & method **[완료]**<br/>
-3.5주차 - bootstrap **[진행중]**<br/>
+3.5주차 - bootstrap **[완료]**<br/>
 
 <br/>
 
