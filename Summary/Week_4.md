@@ -97,7 +97,7 @@ def home(request):
 **몇 번째 객체**를 출력할 것인지에 대한 정보 필요 따라서 **인자**에 `blog_id`추가
 
 **Path Converter**<br/>
-**여러 객체**들을 다루는, **계층적인 `url`**을 자동 생성할 때 유리<br/>
+**여러 객체**들을 다루는, **계층적인** `url`을 자동 생성할 때 유리<br/>
 `<type : 변수이름>`<br/>
 타입은 `int`, `str`, `uuid` 등....
 
@@ -122,3 +122,7 @@ def detail(request, blog_id):
                   'detail.html',
                   {'blog': blog_detail})
 ```
+
+<br/>
+
+### 4주차 - 2. 실습과 강의 중반부 메세지
