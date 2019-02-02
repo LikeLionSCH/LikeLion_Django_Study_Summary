@@ -59,7 +59,7 @@ Department of<br/> Computer Software Engineering
 4주차 - 1. pk, path converter, get_object_or_404 **[완료]**<br/>
 4주차 - 2. 실습과 강의 중반부 메세지 **[완료]**<br/>
 4주차 - 3. blog project 1 **[완료]**<br/>
-4주차 - 4. blog project 2 **[진행중]**<br/>
+4주차 - 4. blog project 2 **[완료]**<br/>
 4주차 - 5. portfolio (static) **[진행중]**<br/>
 4주차 - 6. portfolio (media) **[진행중]**<br/>
 4.5주차 - 템플릿 상속, url 관리 **[진행중]**<br/>
