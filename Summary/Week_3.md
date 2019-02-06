@@ -164,9 +164,9 @@ from .models import Blog
 def home(request):
     blogs = Blog.objects
 
-    return render(request,
-                  'home.html',
-                  {'blogs': blogs})
+    return render(request, 'home.html', {
+        'blogs': blogs,
+    })
 ```
 
 #### 3. url 연결

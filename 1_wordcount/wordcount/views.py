@@ -23,8 +23,8 @@ def result(request):
             # Add to dictionary
             words_dic[word] = 1
 
-    return render(request, 'result.html',
-                  {'full': text,
-                   'total': len(words),
-                   'dictionary': words_dic.items(),
-                   })
+    return render(request, 'result.html', {
+        'full': text,
+        'total': len(words),
+       'dictionary': words_dic.items(),
+   })

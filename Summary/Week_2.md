@@ -259,7 +259,9 @@ text = request.GET['fulltext']
 ```python
 def result(request):
     text = request.GET['fulltext']
-    return render(request, 'result.html', {'full': text})
+    return render(request, 'result.html', {
+        'full': text,
+    })
 ```
 
 `result.html`에 **템플릿 변수**를 사용해 파이썬의 변수 사용<br/>
@@ -285,10 +287,10 @@ def result(request):
     text = request.GET['fulltext']
     words = text.split()
 
-    return render(request, 'result.html',
-                  {'full': text,
-                   'total': len(words),
-                   })
+    return render(request, 'result.html', {
+        'full': text,
+        'total': len(words),
+    })
 ```
 템플릿 변수를 사용해 총 단어의 개수 `result.html`에 출력
 ```html
@@ -315,11 +317,11 @@ for word in words:
         # Add to dictionary
         words_dic[word] = 1
 
-return render(request, 'result.html',
-              {'full': text,
-               'total': len(words),
-               'dictionary': words_dic.items(),
-               })
+return render(request, 'result.html', {
+    'full': text,
+    'total': len(words),
+    'dictionary': words_dic.items(),
+})
 ```
 
 **테스트 이미지**<br/>

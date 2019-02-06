@@ -87,9 +87,9 @@ def detail(request, blog_id):
 def home(request):
     blogs = Blog.objects
 
-    return render(request,
-                  'home.html',
-                  {'blogs': blogs})
+    return render(request, 'home.html', {
+        'blogs': blogs,
+    })
 ```
 `home`함수는 `request`만 들어오면 실행되는 함수<br/>
 `request`이외의 정보는 **필요가 없기** 때문에 인자가 `request` 하나다.<br/>
@@ -118,9 +118,9 @@ from django.shortcuts import render, get_object_or_404
 def detail(request, blog_id):
     blog_detail = get_object_or_404(Blog, pk=blog_id)
 
-    return render(request,
-                  'detail.html',
-                  {'blog': blog_detail})
+    return render(request, 'detail.html', {
+        'blog': blog_detail,
+    })
 ```
 
 <br/>
@@ -483,8 +483,9 @@ from .models import Portfolio
 def portfolio(request):
     portfolios = Portfolio.objects
 
-    return render(request, "portfolio.html",
-                  {"portfolios": portfolios})
+    return render(request, "portfolio.html", {
+        "portfolios": portfolios,
+    })
 ```
 
 7. `HTML`에 화면 띄우기
