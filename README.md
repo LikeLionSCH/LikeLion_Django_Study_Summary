@@ -61,5 +61,5 @@ Department of<br/> Computer Software Engineering
 4주차 - 3. blog project 1 **[완료]**<br/>
 4주차 - 4. blog project 2 **[완료]**<br/>
 4주차 - 5. portfolio (static) **[완료]**<br/>
-4주차 - 6. portfolio (media) **[진행중]**<br/>
+4주차 - 6. portfolio (media) **[완료]**<br/>
 4.5주차 - 템플릿 상속, url 관리 **[진행중]**<br/>
