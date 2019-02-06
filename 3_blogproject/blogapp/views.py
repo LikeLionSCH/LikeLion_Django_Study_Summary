@@ -31,3 +31,15 @@ def create(request):
     blog.save()
 
     return redirect('/blog/' + str(blog.id))
+
+def search(request):
+    post_list = Blog.objects.all()
+    keyword = request.GET.get('keyword', '')
+
+    if keyword:
+        post_list = post_list.filter(title__icontains=keyword)
+
+    return render(request, "search.html", {
+        'post_list': post_list,
+        'keyword': keyword
+    })

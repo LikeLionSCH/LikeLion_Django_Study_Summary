@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Blog Project Home</title>
+    <title>Blog Project Search</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -38,20 +38,19 @@
         </div>
     </nav>
 
-    {% for blog in blogs.all %}
+    {% for post in post_list %}
     <div class="container">
         <br/>
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title"> {{ blog.title }} </h5>
-                <h6 class="card-subtitle mb-2 text-muted"> {{ blog.pub_date }} </h6>
-                <p class="card-text"> {{ blog.summary }} </p>
-                <a href="#" class="card-link"><a href="{% url 'detail' blog.id %}">...more</a></a>
+                <h5 class="card-title"> {{ post.title }} </h5>
+                <h6 class="card-subtitle mb-2 text-muted"> {{ post.pub_date }} </h6>
+                <p class="card-text"> {{ post.summary }} </p>
+                <a href="#" class="card-link"><a href="{% url 'detail' post.id %}">...more</a></a>
             </div>
         </div>
     </div>
     {% endfor %}
-
     <br>
 </body>
 

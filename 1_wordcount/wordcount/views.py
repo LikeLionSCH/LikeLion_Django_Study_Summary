@@ -26,5 +26,5 @@ def result(request):
     return render(request, 'result.html', {
         'full': text,
         'total': len(words),
-       'dictionary': words_dic.items(),
-   })
+        dictionary': words_dic.items(),
+    })
