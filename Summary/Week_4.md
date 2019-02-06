@@ -506,8 +506,8 @@ def portfolio(request):
 ```
 
 #### 실행 결과
-데이터 저장 후 `admin` 페이지
+데이터 저장 후 `admin` 페이지<br/>
 <img src="Week_4_5_Test_Image_4.png" width="400" height="auto">
 
-데이터 저장 후 `portfolio` 페이지
+데이터 저장 후 `portfolio` 페이지<br/>
 <img src="Week_4_5_Test_Image_5.png" width="600" height="auto">
