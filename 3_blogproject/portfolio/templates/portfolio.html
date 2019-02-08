@@ -1,91 +1,41 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Blog Project Portfolio</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    {% block extra %}
+    <link rel="stylesheet" href="{% static 'portfolio.css' %}">
+    {% endblock %}
 </head>
 
+{% block contents %}
+
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="{% url 'portfolio' %}">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'home' %}">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'new' %}">글쓰기</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Content -->
     <div class="container">
-
-        <br><br>
-
-        <!-- Page Heading -->
-        <h1 class="my-4">Portfolio Page
-            <small>This is Portfolio Page</small>
-        </h1>
-
         <div class="row">
-            <div class="col-lg-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="{% static 'first_logo.png' %}" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">SCH Logo Image</a>
-                        </h4>
-                        <p class="card-text">Like Lion at SCH First Logo Image</p>
-                    </div>
+            <div class="card col-lg-4 col-md-4 col-sm-4 col-xs-6" id="card">
+                <img src="{% static 'first_logo.png' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SCH Logo Image</h5>
+                    <p class="card-text">Like Lion at SCH First Logo Image</p>
                 </div>
             </div>
 
             {% for portfolio in portfolios.all %}
-            <div class="col-lg-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="{{ portfolio.image.url }}" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#"> {{ portfolio.title }} </a>
-                        </h4>
-                        <p class="card-text"> {{ portfolio.description }} </p>
-                    </div>
+            <div class="card col-lg-4 col-md-4 col-sm-4 col-xs-6" id="card">
+                <img src="{{ portfolio.image.url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> {{ portfolio.title }} </h5>
+                    <p class="card-text"> {{ portfolio.description }} </p>
                 </div>
             </div>
+            <br>
             {% endfor %}
         </div>
-        <!-- /.row -->
 
-        <!-- Pagination -->
-        <ul class="pagination justify-content-center">
+        <ul class="pagination justify-content-center" style="margin-top:20px;">
             <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
@@ -110,16 +60,7 @@
         </ul>
 
     </div>
-    <!-- /.container -->
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
-        </div>
-        <!-- /.container -->
-    </footer>
-
 </body>
+{% endblock %}
 
 </html>
