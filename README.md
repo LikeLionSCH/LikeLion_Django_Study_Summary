@@ -67,7 +67,7 @@ Department of<br/> Computer Software Engineering
 <br/>
 
 [[Week 5]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_5.md)<br/>
-5주차 - 1. 로그인, 회원가입 이론 **[진행중]**<br/>
+5주차 - 1. 로그인, 회원가입 이론 **[완료]**<br/>
 5주차 - 2. 로그인, 회원가입 실습 **[진행중]**<br/>
 5주차 - 3. Pagination 이론 **[진행중]**<br/>
 5주차 - 4. Pagination 실습 **[진행중]**<br/>
