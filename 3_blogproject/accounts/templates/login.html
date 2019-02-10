@@ -5,20 +5,16 @@
     <br>
     <h1>Login</h1>
     <br>
-    <p> {{ error }} </p>
+    {% if error %}
+        <p> {{ error }} </p>
+    {% else %}
+        <p> Please fill out the form below. </p>
+    {% endif %}
 
 <form action="{% url 'login' %}" method="POST">
     {% csrf_token %}
-    Username :
-    <br>
-    <input type="text" name="username" value="">
-    <br>
-
-    Password :
-    <br>
-    <input type="password" name="password" value="">
-    <br>
-    <br>
+    {{form}}
+    <br><br>
     <input type="submit" name="" value="Login" class="btn btn-primary">
 </form>
 

@@ -46,6 +46,13 @@
                 </li>
                 {% endif %}
             </ul>
+
+            {% if user.is_authenticated %}
+            <span class="navbar-text" style="margin-right:10px;">
+              {{ user.username }} 님
+            </span>
+            {% endif %}
+
             <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword" onclick="this.value=''" value={{keyword}}>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
