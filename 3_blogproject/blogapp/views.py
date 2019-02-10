@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
 from django.utils import timezone
 from .models import Blog
 
@@ -18,6 +19,7 @@ def detail(request, blog_id):
         "details": details,
     })
 
+@login_required
 def new(request):
     return render(request, "new.html")
 

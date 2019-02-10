@@ -28,20 +28,23 @@
                     <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
                     <a class="nav-link" href="{% url 'new' %}">글쓰기</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                 </li>
+                {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'signup' %}">Sign up</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'login' %}">Login</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-                </li>
+                {% endif %}
             </ul>
             <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword" onclick="this.value=''" value={{keyword}}>

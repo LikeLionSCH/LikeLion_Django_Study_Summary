@@ -3,9 +3,9 @@
 {% block contents %}
 <div class="container">
     <br>
-    <br>
     <h1>Login</h1>
     <br>
+    <p> {{ error }} </p>
 
 <form action="{% url 'login' %}" method="POST">
     {% csrf_token %}
