@@ -237,16 +237,16 @@ Paginator(어떤 객체를, 한페이지당 몇 개 씩)
 #### Page 객체의 메소드 함수
 주로 사용하는 메소드 함수
 
-| 함수                       | 뜻                                      |
-| -------------------------- | --------------------------------------- |
-| page.count()               | 총 객체 수 반환                         |
-| page.num_pages()           | 총 페이지 개수 반환                     |
-| page.page(n)               | n번째 페이지 반환                       |
-| page.page_range()          | (1부터 시작)페이지 리스트 반환          |
-| page.get_page(n)           | n번째 페이지 가져오기                   |
-| page.has_next()            | 다음 페이지가 있으면 True, 없으면 False |
-| page.has_previous()        | 이전 페이지가 있으면 True, 없으면 False |
-| page.previous_page_numer() | 이전 페이지 번호 반환                   |
+| 함수                        | 뜻                                      |
+| --------------------------- | --------------------------------------- |
+| page.count()                | 총 객체 수 반환                         |
+| page.num_pages()            | 총 페이지 개수 반환                     |
+| page.page(n)                | n번째 페이지 반환                       |
+| page.page_range()           | (1부터 시작)페이지 리스트 반환          |
+| page.get_page(n)            | n번째 페이지 가져오기                   |
+| page.has_next()             | 다음 페이지가 있으면 True, 없으면 False |
+| page.has_previous()         | 이전 페이지가 있으면 True, 없으면 False |
+| page.previous_page_number() | 이전 페이지 번호 반환                   |
 
 #### 원하는 페이지 번호를 얻는 방법
 아래와 같은 코드를 사용
@@ -271,3 +271,48 @@ page = request.GET.get('page')
 <br/>
 
 ### 5주차 - 4. Pagination 실습
+#### 1. 필요한 모듈 import
+```python
+from django.core.paginator import Paginator
+```
+
+#### 2. views.py의 home함수 수정하기
+```python
+def home(request):
+    blog_list = Blog.objects.all()
+
+    paginator = Paginator(blog_list, 3)
+    page = request.GET.get('page')
+
+    posts = paginator.get_page(page)
+
+    return render(request, "home.html", {
+        "posts": posts,
+    })
+```
+
+#### 3. home.html 수정
+기존에는 `all`매서드를 사용해 모든 객체를 가져와 사용<br/>
+**Pagination** 기능을 사용하면 한 페이지씩 포스트를 가져와 사용
+```html
+{% for blog in posts %}
+...
+{% endfor %}
+```
+
+페이지 이동 링크 추가
+```html
+{% if posts.has_previous %}
+<a href="?page=1">First</a>
+<a href="?page={{ posts.previous_page_number }}"> Previous</a>
+{% endif %}
+
+<span> {{ posts.number }} </span>
+<span> of </span>
+<span> {{ posts.paginator.num_pages }} </span>
+
+{% if posts.has_next %}
+<a href="?page={{ posts.next_page_number }}"> Next</a>
+<a href="?page={{ posts.paginator.num_pages }}"> Last</a>
+{% endif %}
+```
