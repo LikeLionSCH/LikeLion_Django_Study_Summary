@@ -71,7 +71,7 @@ Department of<br/> Computer Software Engineering
 5주차 - 2. 로그인, 회원가입 실습 **[완료]**<br/>
 5주차 - 3. Pagination 이론 **[완료]**<br/>
 5주차 - 4. Pagination 실습 **[완료]**<br/>
-5.5주차 - Faker **[진행중]**<br/>
+5.5주차 - Faker **[완료]**<br/>
 
 <br/>
 
