@@ -8,16 +8,13 @@
     <br>
     <br>
     <div class="container">
-        <form action="{% url 'create' %}">
-            <h4>제목</h4>
-            <input type="text" name="title">
-            <br><br>
-
-            <h4>본문</h4>
-            <textarea name="body" rows="10" cols="40"></textarea>
-            <br><br>
-
-            <input type="submit" class="btn btn-dark" value="제출하기">
+        <form method="POST">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <br>
+            <input type="submit" value="제출하기" class="btn btn-dark">
         </form>
     </div>
     <br>
