@@ -77,5 +77,5 @@ Department of<br/> Computer Software Engineering
 
 [[Week 6]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_6.md)<br/>
 6주차 - 1. form 이론 **[완료]**<br/>
-6주차 - 2. form 실습 **[진행중]**<br/>
+6주차 - 2. form 실습 **[완료]**<br/>
 6.5주차 - heroku에 배포하기 **[진행중]**<br/>
