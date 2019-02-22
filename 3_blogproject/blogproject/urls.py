@@ -10,6 +10,7 @@ urlpatterns = [
     path('', blogapp.views.home, name="home"),
     path('blog/', include('blogapp.urls')),
     path('accounts/', include('accounts.urls')),
+    path('sociallogin/', include('allauth.urls')),
     path('portfolio', portfolio.views.portfolio, name="portfolio"),
 ]
 

@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
 {% block contents %}
+{% load socialaccount %}
+{% providers_media_js %}
 <div class="container">
     <br>
     <h1>Login</h1>
@@ -14,8 +16,20 @@
 <form action="{% url 'login' %}" method="POST">
     {% csrf_token %}
     {{form}}
+
     <br><br>
+
     <input type="submit" name="" value="Login" class="btn btn-primary">
+
+    <br><br>
+
+    {% if user_is_authenticated %}
+    <a href="/sociallogin/logout">Google Logout</a> /
+
+    {% else %}
+    <a href="/sociallogin/signup">Google Sign Up</a> /
+    <a href="{% provider_login_url 'google' %}">Google Login</a>
+    {% endif %}
 </form>
 
 </div>
