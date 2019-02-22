@@ -93,11 +93,6 @@ $ python manage.py migrate
 
 ...
 
-{% if user_is_authenticated %}
-<a href="/sociallogin/logout">Google Logout</a> /
-
-{% else %}
 <a href="/sociallogin/signup">Google Sign Up</a> /
 <a href="{% provider_login_url 'google' %}">Google Login</a>
-{% endif %}
 ```
