@@ -70,7 +70,7 @@ Department of<br/> Computer Software Engineering
 
 [[Week 7]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_7.md)<br/>
 7주차 - 1. 소셜 로그인 이론 **[완료]**<br/>
-7주차 - 2. 소셜 로그인 실습 **[진행중]**<br/>
+7주차 - 2. 소셜 로그인 실습 **[완료]**<br/>
 7주차 - 3. API 이론 **[진행중]**<br/>
 7주차 - 4. API 실습 **[진행중]**<br/>
 7.5주차 - 썸네일 만들기  **[진행중]**<br/>
