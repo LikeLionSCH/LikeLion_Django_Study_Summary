@@ -93,6 +93,5 @@ $ python manage.py migrate
 
 ...
 
-<a href="/sociallogin/signup">Google Sign Up</a> /
 <a href="{% provider_login_url 'google' %}">Google Login</a>
 ```
