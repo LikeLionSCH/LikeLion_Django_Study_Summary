@@ -17,19 +17,17 @@
 
         {% if user.is_authenticated %}
         <form action="{% url 'delete' blog.id %}" method="POST">
-            <button type="button" class="btn btn-outline-primary btn-lg">
+            <button class="btn btn-outline-primary btn-lg">
                 <a href="{% url 'home' %}">List</a>
             </button>
-            <button type="button" class="btn btn-outline-warning btn-lg">Edit</button>
+            <button class="btn btn-outline-warning btn-lg">Edit</button>
             {% csrf_token %}
-            <button type="button" class="btn btn-outline-danger btn-lg" type="submit">Delete</button>
+            <button class="btn btn-outline-danger btn-lg" type="submit">Delete</button>
         </form>
         {% else %}
-        <form action="{% url 'delete' blog.id %}" method="POST">
-            <button type="button" class="btn btn-outline-warning btn-lg">Edit</button>
-            {% csrf_token %}
-            <button type="button" class="btn btn-outline-danger btn-lg" type="submit">Delete</button>
-        </form>
+        <button type="button" class="btn btn-outline-primary btn-lg">
+            <a href="{% url 'home' %}">List</a>
+        </button>
         {% endif %}
     </div>
 </body>
