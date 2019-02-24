@@ -1,24 +1,81 @@
-<h1> Hello World! </h1>
-
 {% load socialaccount %}
 {% providers_media_js %}
 
-<a href="/accounts/signup">회원가입</a>
+<!DOCTYPE html>
+<html>
 
-<br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=t10n3xu9td"></script>
+</head>
 
-{% if user.is_authenticated %}
-<a href="/accounts/logout">로그아웃</a>
+<body>
+    <h1> Hello World! </h1>
 
-<br>
+    <a href="/accounts/signup">회원가입</a>
 
-{{ user.username }} 님이 로그인 중
+    <br>
 
-{% else %}
-<a href="{% provider_login_url 'google' %}">구글 로그인</a>
+    {% if user.is_authenticated %}
+    <a href="/accounts/logout">로그아웃</a>
 
-<br>
+    <br>
 
-로그인 해주세요
+    {{ user.username }} 님이 로그인 중
 
-{% endif %}
+    {% else %}
+    <a href="{% provider_login_url 'google' %}">구글 로그인</a>
+
+    <br>
+
+    로그인 해주세요
+
+    {% endif %}
+    <div id="map" style="width:50%;height:400px;"></div>
+    <br>
+    <div id="map2" style="width:50%;height:400px;"></div>
+
+    <script>
+        var HOME_PATH = window.HOME_PATH || '.';
+
+        var cityhall = new naver.maps.LatLng(37.5666805, 126.9784147),
+            map = new naver.maps.Map('map', {
+                center: cityhall.destinationPoint(0, 500),
+                zoom: 10
+            }),
+            marker = new naver.maps.Marker({
+                map: map,
+                position: cityhall
+            });
+
+        var contentString = [
+            '<div class="iw_inner">',
+            '   <h3>서울특별시청</h3>',
+            '   <p>서울특별시 중구 태평로1가 31 | 서울특별시 중구 세종대로 110 서울특별시청<br />',
+            '       <img src="' + HOME_PATH + '/img/example/hi-seoul.jpg" width="55" height="55" alt="서울시청" class="thumb" /><br />',
+            '       02-120 | 공공,사회기관 &gt; 특별,광역시청<br />',
+            '       <a href="http://www.seoul.go.kr" target="_blank">www.seoul.go.kr/</a>',
+            '   </p>',
+            '</div>'
+        ].join('');
+
+        var infowindow = new naver.maps.InfoWindow({
+            content: contentString
+        });
+
+        naver.maps.Event.addListener(marker, "click", function(e) {
+            if (infowindow.getMap()) {
+                infowindow.close();
+            } else {
+                infowindow.open(map, marker);
+            }
+        });
+
+        infowindow.open(map, marker);
+    </script>
+</body>
+
+</html>
