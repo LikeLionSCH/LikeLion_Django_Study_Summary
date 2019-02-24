@@ -19,10 +19,10 @@ def home(request):
 
 
 def detail(request, blog_id):
-    details = get_object_or_404(Blog, pk=blog_id)
+    blog = get_object_or_404(Blog, pk=blog_id)
 
     return render(request, "detail.html", {
-        "details": details,
+        "blog": blog,
     })
 
 
@@ -71,3 +71,15 @@ def new(request):
         return render(request, 'new.html', {
             'form': form,
         })
+
+def delete(request, blog_id):
+    blog = Blog.objects.get(pk=blog_id)
+
+    if request.method == 'POST':
+        blog.delete()
+
+    return redirect('home')
+
+def edit(request, blog_id):
+
+    return redirect('/blog/' + str(blog.id))
