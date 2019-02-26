@@ -20,7 +20,9 @@
             <button class="btn btn-outline-primary btn-lg">
                 <a href="{% url 'home' %}">List</a>
             </button>
-            <button class="btn btn-outline-warning btn-lg">Edit</button>
+            <button class="btn btn-outline-warning btn-lg">
+                <a href="{% url 'edit' blog.id %}">Edit</a>
+            </button>
             {% csrf_token %}
             <button class="btn btn-outline-danger btn-lg" type="submit">Delete</button>
         </form>

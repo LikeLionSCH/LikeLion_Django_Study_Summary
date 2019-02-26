@@ -73,13 +73,30 @@ def new(request):
         })
 
 def delete(request, blog_id):
-    blog = Blog.objects.get(pk=blog_id)
+    post = Blog.objects.get(pk=blog_id)
 
     if request.method == 'POST':
-        blog.delete()
+        post.delete()
 
     return redirect('home')
 
 def edit(request, blog_id):
+    before = Blog.objects.get(pk=blog_id)
 
-    return redirect('/blog/' + str(blog.id))
+    if request.method == 'POST':
+        form = BlogPost(request.POST, instance=before)
+
+        if form.is_valid():
+            blog = form.save(commit=False)
+            blog.title = form.cleaned_data['title']
+            blog.body = form.cleaned_data['body']
+
+            blog.save()
+
+            return redirect('/blog/' + str(blog.id))
+
+    form = BlogPost(instance=before)
+
+    return render(request, 'new.html', {
+        "form": form,
+    })
