@@ -6,7 +6,7 @@
 {% block contents %}
 <body>
 
-    {% for post in post_list %}
+    {% for post in posts %}
     <div class="container">
         <br/>
         <div class="card">
@@ -19,7 +19,24 @@
         </div>
     </div>
     {% endfor %}
+
     <br>
+
+    <div class="container">
+        {% if posts.has_previous %}
+        <a href="?page=1">First</a>
+        <a href="?page={{ posts.previous_page_number }}"> Previous</a>
+        {% endif %}
+
+        <span> {{ posts.number }} </span>
+        <span> of </span>
+        <span> {{ posts.paginator.num_pages }} </span>
+
+        {% if posts.has_next %}
+        <a href="?page={{ posts.next_page_number }}"> Next</a>
+        <a href="?page={{ posts.paginator.num_pages }}"> Last</a>
+        {% endif %}
+    </div>
 </body>
 {% endblock %}
 

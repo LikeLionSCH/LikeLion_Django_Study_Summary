@@ -45,8 +45,13 @@ def search(request):
     if keyword:
         post_list = post_list.filter(title__icontains=keyword)
 
+    paginator = Paginator(post_list, 3)
+    page = request.GET.get('page')
+
+    posts = paginator.get_page(page)
+
     return render(request, "search.html", {
-        'post_list': post_list,
+        'posts': posts,
         'keyword': keyword
     })
 
@@ -72,6 +77,7 @@ def new(request):
             'form': form,
         })
 
+
 def delete(request, blog_id):
     post = Blog.objects.get(pk=blog_id)
 
@@ -79,6 +85,7 @@ def delete(request, blog_id):
         post.delete()
 
     return redirect('home')
+
 
 def edit(request, blog_id):
     before = Blog.objects.get(pk=blog_id)
