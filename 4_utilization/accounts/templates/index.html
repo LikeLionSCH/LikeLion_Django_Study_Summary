@@ -16,30 +16,36 @@
 <body>
     <h1> Hello World! </h1>
 
-    <a href="/accounts/signup">회원가입</a>
-
-    <br>
-
     {% if user.is_authenticated %}
     <a href="/accounts/logout">로그아웃</a>
-
     <br>
-
     {{ user.username }} 님이 로그인 중
 
     {% else %}
+    <a href="/accounts/signup">회원가입</a>
+    <br>
     <a href="{% provider_login_url 'google' %}">구글 로그인</a>
-
     <br>
-
     로그인 해주세요
-
     {% endif %}
+
+    <br><br>
+
     <div id="map" style="width:50%;height:400px;"></div>
-    <br>
-    <div id="map2" style="width:50%;height:400px;"></div>
 
     <script src="/static/js/naver_map_api.js" type="text/javascript"></script>
+
+    <br><br>
+
+    {% for picture in pictures.all %}
+    <img src="{{ picture.image.url }}" width=300>
+    <br>
+    {{ picture.text }}
+
+    <br><br>
+
+    <img src="{{ picture.image_thumbnail.url }}">
+    {% endfor %}
 </body>
 
 </html>

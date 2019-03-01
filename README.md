@@ -73,4 +73,13 @@ Department of<br/> Computer Software Engineering
 7주차 - 2. 소셜 로그인 실습 **[완료]**<br/>
 7주차 - 3. API 이론 **[완료]**<br/>
 7주차 - 4. API 실습 **[완료]**<br/>
-7.5주차 - 썸네일 만들기 **[진행중]**<br/>
+7.5주차 - 썸네일 만들기 **[완료]**<br/>
+
+<br/>
+
+[[Week 8]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_8.md)<br/>
+8주차 - 1. app 재사용 이론 **[진행중]**<br/>
+8주차 - 2. app 재사용 실습 **[진행중]**<br/>
+8주차 - 3. PostgreSQL 연동 이론, 설치 **[진행중]**<br/>
+8주차 - 4. PostgreSQL DB연동 실습 **[진행중]**<br/>
+8주차 - 5. aws 배포하기 **[진행중]**<br/>
