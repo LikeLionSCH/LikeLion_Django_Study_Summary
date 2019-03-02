@@ -78,7 +78,7 @@ Department of<br/> Computer Software Engineering
 <br/>
 
 [[Week 8]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Week_8.md)<br/>
-8주차 - 1. app 재사용 이론 **[진행중]**<br/>
+8주차 - 1. app 재사용 이론 **[완료]**<br/>
 8주차 - 2. app 재사용 실습 **[진행중]**<br/>
 8주차 - 3. PostgreSQL 연동 이론, 설치 **[진행중]**<br/>
 8주차 - 4. PostgreSQL DB연동 실습 **[진행중]**<br/>
