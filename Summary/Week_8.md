@@ -28,3 +28,5 @@ $ pip install <패키지 이름>
 4. `MANIFEST.in`
 
 <br/>
+
+### 8주차 - 2. app 재사용 실습
