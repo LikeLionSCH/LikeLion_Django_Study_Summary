@@ -1,5 +1,5 @@
 include LICENSE
 include README.rst
-recursive-include login/templates *
-recursive-include login/static *
-recursive-include login/migrations *
+recursive-include accounts/templates *
+recursive-include accounts/static *
+recursive-include accounts/migrations *
