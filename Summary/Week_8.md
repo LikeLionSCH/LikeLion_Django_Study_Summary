@@ -93,3 +93,7 @@ DATABASES = {
 #### PostgreSQL 설치하기
 [링크](https://www.postgresql.org/download/)로 이동해 각 운영체제에 맞는 **PostgreSQL** 설치<br/>
 **패스워드**와 **포트번호**는 기억하자.
+
+<br/>
+
+### 8주차 - 4. PostgreSQL DB연동 실습
