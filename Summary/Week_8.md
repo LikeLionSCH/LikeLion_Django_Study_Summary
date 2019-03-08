@@ -97,3 +97,7 @@ DATABASES = {
 <br/>
 
 ### 8주차 - 4. PostgreSQL DB연동 실습
+
+#### 1. pgAdmin 실행 (하나의 서버)
+
+#### 2. postgressSQL 계정 생성
