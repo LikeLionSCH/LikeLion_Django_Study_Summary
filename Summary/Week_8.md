@@ -101,3 +101,11 @@ DATABASES = {
 #### 1. pgAdmin 실행 (하나의 서버)
 
 #### 2. postgressSQL 계정 생성
+
+<br/>
+
+### 8주차 - 5. aws 배포하기
+
+<br/>
+
+### 8.5주차 - What's Next? & 종강
