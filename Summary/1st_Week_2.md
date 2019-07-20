@@ -273,10 +273,10 @@ def result(request):
 
 #### 테스트 이미지<br/>
 **입력**<br/>
-<img src="Week_2_3_Test_Image_1.png" width="400" height="auto">
+<img src="/1st_images/Week_2_3_Test_Image_1.png" width="400" height="auto">
 
 **출력**<br/>
-<img src="Week_2_3_Test_Image_2.png" width="400" height="auto">
+<img src="/1st_images/Week_2_3_Test_Image_2.png" width="400" height="auto">
 
 #### 6. 저장한 문자열 자르기
 `문자열`에서 `단어`는 **공백**을 기준<br/>
@@ -298,7 +298,7 @@ def result(request):
 ```
 
 **테스트 이미지**<br/>
-<img src="Week_2_3_Test_Image_3.png" width="400" height="auto">
+<img src="/1st_images/Week_2_3_Test_Image_3.png" width="400" height="auto">
 
 ### 7. 단어 개수 세기
 **사전형 자료형** 사용<br/>
@@ -325,7 +325,7 @@ return render(request, 'result.html', {
 ```
 
 **테스트 이미지**<br/>
-<img src="Week_2_3_Test_Image_4.png" width="400" height="auto">
+<img src="/1st_images/Week_2_3_Test_Image_4.png" width="400" height="auto">
 
 #### 8. 단어 개수 result 페이지에 출력
 **템플릿 태그** 사용<br/>
@@ -340,7 +340,7 @@ return render(request, 'result.html', {
 ```
 
 **테스트 이미지**<br/>
-<img src="Week_2_3_Test_Image_5.png" width="400" height="auto">
+<img src="/1st_images/Week_2_3_Test_Image_5.png" width="400" height="auto">
 
 <br/>
 
