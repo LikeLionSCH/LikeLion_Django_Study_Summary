@@ -130,11 +130,3 @@ $python manage.py migrate
 ```
 $python manage.py createsuperuser
 ```
-
-<br/>
-
-### 8주차 - 5. aws 배포하기
-
-<br/>
-
-### 8.5주차 - What's Next? & 종강
