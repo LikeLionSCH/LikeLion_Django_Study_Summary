@@ -185,7 +185,7 @@ urlpatterns = [
 ```
 
 #### 10. 파일 설정 후 서버 구동 테스트<br/>
-<img src="Week_1_3_Test_Image.png" width="400" height="auto">
+<img src="/1st_images/Week_1_3_Test_Image.png" width="400" height="auto">
 
 <br/>
 
