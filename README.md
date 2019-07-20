@@ -87,7 +87,7 @@ Department of<br/> Computer Software Engineering
 
 ## 2학기 요약
 
-[[Week 1]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week1.md)<br/>
+[[Week 1]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1.md)<br/>
 1주차 - 1. JSON **[진행중]**<br/>
 1주차 - 2. Http Request & Response **[진행중]**<br/>
 1주차 - 2.5 httpie **[진행중]**<br/>
