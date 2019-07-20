@@ -7,15 +7,19 @@ Department of<br/> Computer Software Engineering
 ##  [김민수](https://github.com/alstn2468)
 ## [ [Facebook](https://www.facebook.com/profile.php?id=100003769223078) ] [ [Github](https://github.com/alstn2468) ] [ [LinkedIn](https://www.linkedin.com/in/minsu-kim-336289160/) ] [ [Blog](https://alstn2468.github.io/) ]<br/>
 
-운영진 스터디 요약 레파지토리입니다.<br/>
+### 멋쟁이 사자처럼 7기 **Django** 강의 요약 레파지토리입니다.<br/>
 
-[[Cheat Sheet]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Cheat_Sheet.md)
+- - -
 
 ### 도전! 파이썬 115제
 #### 115 / 115
 [[Code]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/tree/master/Python_Challenge_115)
 
-### 수업 자료
+- - -
+
+[[Cheat Sheet]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Cheat_Sheet.md)
+
+## 1학기 요약
 [[Week 1]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1.md)<br/>
 0주자 - 1.오리엔테이션 **[완료]**<br/>
 1주차 - 1.기본환경 셋팅 **[완료]**<br/>
@@ -85,12 +89,14 @@ Department of<br/> Computer Software Engineering
 8주차 - 5. aws 배포하기 **[완료]**<br/>
 8.5주차 - What's Next? & 종강 **[완료]**<br/>
 
-<br/>
+- - -
+
+## 2학기 요약
 
 [[Week 1]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week1.md)<br/>
-1주차 - 1. app 재사용 이론 **[완료]**<br/>
-1주차 - 2. app 재사용 실습 **[완료]**<br/>
-1주차 - 3. PostgreSQL 연동 이론, 설치 **[완료]**<br/>
-1주차 - 4. PostgreSQL DB연동 실습 **[완료]**<br/>
-1주차 - 5. aws 배포하기 **[완료]**<br/>
-1주차 - What's Next? & 종강 **[완료]**<br/>
+1주차 - 1. JSON **[진행중]**<br/>
+1주차 - 2. Http Request & Response **[진행중]**<br/>
+1주차 - 2.5 httpie **[진행중]**<br/>
+1주차 - 3. CBV (1) **[진행중]**<br/>
+1주차 - 4. CBV (2) **[진행중]**<br/>
+1주차 - 5  CBV (3) **[진행중]**<br/>
