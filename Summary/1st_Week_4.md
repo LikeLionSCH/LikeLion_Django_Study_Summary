@@ -168,13 +168,13 @@ def detail(request, blog_id):
 
 #### 결과 화면
 **home.html**<br/>
-<img src="Week_4_2_Test_Image_1.png" width="600" height="auto">
+<img src="/1st_imaages/Week_4_2_Test_Image_1.png" width="600" height="auto">
 
 **detail.html**<br/>
-<img src="Week_4_2_Test_Image_2.png" width="600" height="auto">
+<img src="/1st_imaages/Week_4_2_Test_Image_2.png" width="600" height="auto">
 
 **404 Not Found**<br/>
-<img src="Week_4_2_Test_Image_3.png" width="600" height="auto">
+<img src="/1st_imaages/Week_4_2_Test_Image_3.png" width="600" height="auto">
 
 #### 추가 내용
 1. **복습을 합시다!**
@@ -238,7 +238,7 @@ urlpatterns = [
 ```
 
 #### new 페이지 결과 화면
-<img src="Week_4_4_Test_Image_1.png" width="600" height="auto">
+<img src="/1st_imaages/Week_4_4_Test_Image_1.png" width="600" height="auto">
 
 #### 3. form태그 action url 연결 및 path 설정
 **new.html**
@@ -359,7 +359,7 @@ urlpatterns = [
 ```
 
 #### 2. portfolio앱에 static폴더 생성 및 파일 추가<br/>
-<img src="Week_4_5_Test_Image_1.png" width="400" height="auto">
+<img src="/1st_imaages/Week_4_5_Test_Image_1.png" width="400" height="auto">
 
 #### 3. settings.py에 static폴더 경로 추가
 `STATICFILES_DIRS`은 `static`파일이 **어디 있는지** 알려주는 변수<br/>
@@ -380,7 +380,7 @@ $ python manage.py collectstatic
 ```
 
 최상위 폴더에 `static`폴더가 생성<br/>
-<img src="Week_4_5_Test_Image_2.png" width="200" height="auto">
+<img src="/1st_imaages/Week_4_5_Test_Image_2.png" width="200" height="auto">
 
 #### 5. portfolio.html에서 static파일 사용
 `portfolio.html` 최상단에 아래 코드 추가
@@ -394,7 +394,7 @@ $ python manage.py collectstatic
 ```
 
 **결과 화면**<br/>
-<img src="Week_4_5_Test_Image_3.png" width="600" height="auto">
+<img src="/1st_imaages/Week_4_5_Test_Image_3.png" width="600" height="auto">
 
 <br/>
 
@@ -508,10 +508,10 @@ def portfolio(request):
 
 #### 실행 결과
 데이터 저장 후 `admin` 페이지<br/>
-<img src="Week_4_5_Test_Image_4.png" width="400" height="auto">
+<img src="/1st_imaages/Week_4_5_Test_Image_4.png" width="400" height="auto">
 
 데이터 저장 후 `portfolio` 페이지<br/>
-<img src="Week_4_5_Test_Image_5.png" width="600" height="auto">
+<img src="/1st_imaages/Week_4_5_Test_Image_5.png" width="600" height="auto">
 
 <br/>
 
@@ -525,7 +525,7 @@ def portfolio(request):
 1. 프로젝트 폴더에 `templates`폴더 생성
 2. `templates`폴더에 `base.html`생성
 
-<img src="Week_4_6_Test_Image_1.png" width="200" height="auto">
+<img src="/1st_imaages/Week_4_6_Test_Image_1.png" width="200" height="auto">
 
 3. `base.html`에 **중복되는** 코드 작성<br/>
 
