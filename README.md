@@ -93,4 +93,4 @@ Department of<br/> Computer Software Engineering
 1주차 - 2.5 httpie **[진행중]**<br/>
 1주차 - 3. CBV (1) **[진행중]**<br/>
 1주차 - 4. CBV (2) **[진행중]**<br/>
-1주차 - 5  CBV (3) **[진행중]**<br/>
+1주차 - 5. CBV (3) **[진행중]**<br/>
