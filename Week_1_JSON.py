@@ -17,6 +17,7 @@ print(diary_s)
 print(type(diary_s))
 
 
+# loads : json --> dict
 diary_back = json.loads(diary_s)
 print(diary_back)
 print(type(diary_back))

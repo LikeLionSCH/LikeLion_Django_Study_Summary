@@ -142,3 +142,5 @@ print(type(diary_back))
 {'id': 3, 'title': "I'm starving..", 'body': 'On nana On na On nanana deal car'}
 <class 'dict'>
 ```
+
+[[코드 확인하기]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Week_1_JSON.py)
