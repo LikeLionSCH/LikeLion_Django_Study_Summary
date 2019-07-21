@@ -81,8 +81,8 @@ Department of<br/> Computer Software Engineering
 8주차 - 2. app 재사용 실습 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_8/1st_Week_8_2.md)]**<br/>
 8주차 - 3. PostgreSQL 연동 이론, 설치 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_8/1st_Week_8_3.md)]**<br/>
 8주차 - 4. PostgreSQL DB연동 실습 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_8/1st_Week_8_4.md)]**<br/>
-8주차 - 5. aws 배포하기 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_8/1st_Week_8_5.md)]**<br/>
-8.5주차 - What's Next? & 종강 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_8/1st_Week_8_6.md)]**<br/>
+8주차 - 5. aws 배포하기 **[Summary]**<br/>
+8.5주차 - What's Next? & 종강 **[Summary]**<br/>
 
 - - -
 
