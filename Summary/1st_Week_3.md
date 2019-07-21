@@ -1,14 +1,14 @@
-### 3주차 - 1.model&admin 이론
+## 3주차 - 1.model&admin 이론
 
-#### 학습목표
+### 학습목표
 `Model`에 데이터를 **어떻게** 담을 것 인가?<br/>
 `Model`의 데이터를 **어떻게** `View`로 넘길 것인가?<br/>
 데이터를 **어떻게** 화면에 띄울 것인가?
 
-#### 선행지식
+### 선행지식
 **Python - Class**
 
-#### 데이터베이스를 다루는 Model
+### 데이터베이스를 다루는 Model
 처리할 데이터의 형식을 `model.py`에 `class`로 정의<br/>
 
 - `model.py` : 데이터를 만드는 공장
@@ -30,32 +30,32 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-#### 127.0.0.1/admin
+### 127.0.0.1/admin
 `admin`계정 생성 명령어
 ```
 $ python manage.py createsuperuser
 ```
 `admin.py`에 들어가 데이터 등록
 
-#### 한 줄 요약
+### 한 줄 요약
 `DataBase`에 **어떻게** 생긴 데이터를 넣을지 **정의**하고,<br/>
 거기에 `admin`권한으로 **데이터**를 **저장**(= 글 쓰기)
 
 <br/>
 
-### 3주차 - 2.model&admin 실습
+## 3주차 - 2.model&admin 실습
 
-#### 1. 새로운 Django 프로젝트 생성
+### 1. 새로운 Django 프로젝트 생성
 ```
 $ django-admin startproject <project 이름>
 ```
 
-#### 2. 새 프로젝트 App 생성
+### 2. 새 프로젝트 App 생성
 ```
 $ python manage.py startapp <app 이름>
 ```
 
-#### 3. settings.py에 App 추가
+### 3. settings.py에 App 추가
 `INSTALLED_APPS`리스트에 앱 추가
 ```python
 INSTALLED_APPS = [
@@ -69,7 +69,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-#### 4. 처리할 데이터를 models.py에 정의
+### 4. 처리할 데이터를 models.py에 정의
 `class`를 사용하여 정의<br/>
 - `models.CharField()` : 짧은 문자열<br/>
 - `models.DateTimeField()` : 날짜와 시간을 나타내는 데이터<br/>
@@ -82,7 +82,7 @@ class Blog(models.Model):
     body = models.TextField()
 ```
 
-#### 5. 작성한 model을 DataBase에 적용
+### 5. 작성한 model을 DataBase에 적용
 작성한 `model`을 `DataBase`에 적용하는 명령어
 ```
 $ python manage.py makemigrations
@@ -96,7 +96,7 @@ $ python manage.py migrate
 **실행 결과**<br/>
 <img src="/1st_imaages/Week_3_2_Test_Image_1.png" width="400" height="auto">
 
-#### 6. admin계정 생성
+### 6. admin계정 생성
 `admin`계정 생성 명령어
 ```
 $ python manage.py createsuperuser
@@ -106,7 +106,7 @@ $ python manage.py createsuperuser
 <img src="./1st_images/Week_3_2_Test_Image_2.png" width="600" height="auto"><br/>
 <img src="./1st_images/Week_3_2_Test_Image_3.png" width="600" height="auto">
 
-#### 7. admin.py에 models.py에 정의한 Class 추가
+### 7. admin.py에 models.py에 정의한 Class 추가
 1. `admin.py`에 `models.py`의 `class` 선언
 ```python
 from .models import Blog
@@ -129,7 +129,7 @@ admin.site.register(Blog)
 **admin 사이트 실행 결과**<br/>
 <img src="./1st_images/Week_3_2_Test_Image_4.png" width="600" height="auto">
 
-#### 8. Blog Object를 제목으로 설정
+### 8. Blog Object를 제목으로 설정
 `class`내부에 `__str__`함수 정의
 ```python
 class Blog(models.Model):
@@ -145,15 +145,15 @@ class Blog(models.Model):
 
 <br/>
 
-### 3주차 - 3.queryset & method
+## 3주차 - 3.queryset & method
 `DataBase`의 데이터를 `template`에 출력하기 위해 `views.py`이용
 
-#### 1. models.py의 class를 import
+### 1. models.py의 class를 import
 ```python
 from .models import Blog
 ```
 
-#### 2. views.py에 함수 정의
+### 2. views.py에 함수 정의
 `models.py`로 부터 전달 받은 객체 목록(**쿼리셋**) 이용<br/>
 ```python
 쿼리셋 = <클래스 이름>.objects
@@ -169,7 +169,7 @@ def home(request):
     })
 ```
 
-#### 3. url 연결
+### 3. url 연결
 이전에 진행했던 부분이라 설명은 생략
 ```python
 from django.contrib import admin
@@ -182,7 +182,7 @@ urlpatterns = [
 ]
 ```
 
-#### 4. 쿼리셋 메소드 사용으로 데이터 출력
+### 4. 쿼리셋 메소드 사용으로 데이터 출력
 **쿼리셋과 메소드의 형식**<br/>
 `model.objects.method()`<br/>
 
@@ -207,18 +207,18 @@ urlpatterns = [
 
 <br/>
 
-### 3.5주차 - bootstrap
+## 3.5주차 - bootstrap
 
-#### 부트스트랩이란?
+### 부트스트랩이란?
 **디자인 창고**<br/>
 
-#### 장점
+### 장점
 - **오픈소스**<br/>
 - `CSS`/JavaScript 기반 웹 프레임 워크<br/>
 - 반응형 웹 지원<br/>
 - 브라우저 호환성
 
-#### 단점
+### 단점
 - 양산형 디자인
 - 성능 저하
 

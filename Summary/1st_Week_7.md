@@ -1,8 +1,8 @@
-### 7주차 - 1. 소셜 로그인 이론
+## 7주차 - 1. 소셜 로그인 이론
 
-#### 배우는 주제 자체가 수업 목표
+### 배우는 주제 자체가 수업 목표
 
-#### Social 계정으로 로그인
+### Social 계정으로 로그인
 `pip` 패키지 `allauth` 사용
 
 |         | 기존의 방식                            | Social 계정 방식                             |
@@ -12,14 +12,14 @@
 
 <br/>
 
-### 7주차 - 2. 소셜 로그인 실습
+## 7주차 - 2. 소셜 로그인 실습
 
-#### 1. pip 패키지 설치
+### 1. pip 패키지 설치
 ```
 $ pip install django-allauth
 ```
 
-#### 2. settings.py 설정
+### 2. settings.py 설정
 `INSTALLED_APPS`**리스트**에 내용 추가<br/>
 `django.contrib.sites`와 `allauth`, `provider`설정 추가
 ```python
@@ -60,7 +60,7 @@ AUTHENTICATION_BACKENDS = (
 SITE_ID = 1
 ```
 
-#### 3. url 설정
+### 3. url 설정
 `allauth`패키지 내부에 이미 정의<br/>
 `include`모듈을 사용해 `allauth.urls`추가
 ```python
@@ -74,19 +74,19 @@ urlpatterns = [
 ]
 ```
 
-#### 4. migrate 진행
+### 4. migrate 진행
 ```
 $ python manage.py migrate
 ```
 
-#### 5. admin 페이지의 site설정 변경
+### 5. admin 페이지의 site설정 변경
 `Domain name`과 `Display name`을 사용할 주소로 변경<br/>
 해당 실습에서는 **로컬**에서 작업하므로 `127.0.0.1:8000`사용
 
-#### 6. admin 페이지에서 social application 등록
+### 6. admin 페이지에서 social application 등록
 [링크](https://console.developers.google.com)에서 `Client id`와 `Secret key`확인 후 등록
 
-#### 7. html위에 띄워주기
+### 7. html위에 띄워주기
 ```html
 {% load socialaccount %}
 {% providers_media_js %}
@@ -98,9 +98,9 @@ $ python manage.py migrate
 
 <br/>
 
-### 7주차 - 3. API 이론
+## 7주차 - 3. API 이론
 
-#### API란 무엇인가?
+### API란 무엇인가?
 **A**pplicaion **P**rogramming **I**nterface 의 약자<br/>
 **응용프로그램**에서 사용할 수 있도록,<br/>
 **운영체제**나 프로그래밍 **언어**가 제공하는 기능을<br/>
@@ -108,7 +108,7 @@ $ python manage.py migrate
 
 가지고 있지 않은, 사용하고 싶은 **외부기능**을 사용하도록 **연결**
 
-#### 지도 API
+### 지도 API
 1. 경로 찾기
 2. 위치 검색
 3. etc...
@@ -117,17 +117,17 @@ $ python manage.py migrate
 
 <br/>
 
-### 7주차 - 4. API 실습
+## 7주차 - 4. API 실습
 
-#### 1. [네이버 클라우드 플랫폼](https://www.ncloud.com) 회원가입
+### 1. [네이버 클라우드 플랫폼](https://www.ncloud.com) 회원가입
 
-#### 2. 네이버 Maps API 이용 신청 하기
+### 2. 네이버 Maps API 이용 신청 하기
 
-#### 3. 어플리케이션 등록 (Web Dynamic Map 사용)
+### 3. 어플리케이션 등록 (Web Dynamic Map 사용)
 
-#### 4. 인증 정보 확인 및 저장
+### 4. 인증 정보 확인 및 저장
 
-#### 5. 예시 코드 사용해보기
+### 5. 예시 코드 사용해보기
 `Client_id`에는 인증 정보에 있는 값 사용<br/>
 
 **지도 띄워보기**
@@ -226,17 +226,17 @@ $ python manage.py migrate
 
 <br/>
 
-### 7.5주차 - 썸네일 만들기
+## 7.5주차 - 썸네일 만들기
 
-#### Thumbnail
+### Thumbnail
 이미지 파일을 **대표**하는 이미지
 
-#### 기능 장점
+### 기능 장점
 1. Thumbnail 파일 지정 용이
 2. 파일 용량 관리 용이
 3. 파일 분류에 효율적
 
-#### 실습
+### 실습
 1. 기본적인 **Media 파일** 사용 설정
     + `models.py`에 `model`정의
     + `settings.py`에 경로 설정
@@ -290,7 +290,7 @@ class Pictures(models.Model):
 <img src="{{ blog.image_thumbnail.url }}">
 ```
 
-#### ImageSpecField함수 속성
+### ImageSpecField함수 속성
 확장자 지정
 ```python
 thumbnail = ImageSpecField(..., format='JPEG')

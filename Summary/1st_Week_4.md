@@ -1,11 +1,11 @@
-### 4주차 - 1. pk, path converter, get_object_or_404
+## 4주차 - 1. pk, path converter, get_object_or_404
 
-#### 해야할 것
+### 해야할 것
 1. 글자 수 제한 (글자 **상한선 제시**)
 2. ...more 라는 글자에 **링크 달기**
 3. 링크를 클릭했을 때 `detail.html` 페이지 내보내기
 
-#### 1. models.py에 함수 정의 하기
+### 1. models.py에 함수 정의 하기
 본문의 내용을 **100글자**로 **제한**하는 함수 정의<br/>
 자신 `object`의 `body`를 **100글자**까지 반환
 ```python
@@ -13,7 +13,7 @@ def summary(self):
     return self.body[:100]
 ```
 
-#### 2. home.html의 본문 내용 출력 변경
+### 2. home.html의 본문 내용 출력 변경
 `blog` 객체의 `summary`함수 사용
 ```html
 {% for blog in blogs.all %}
@@ -28,7 +28,7 @@ def summary(self):
 {% endfor %}
 ```
 
-#### 3. 세부 내용 표시 링크 추가
+### 3. 세부 내용 표시 링크 추가
 `a`태그 사용
 ```html
 {% for blog in blogs.all %}
@@ -46,7 +46,7 @@ def summary(self):
 {% endfor %}
 ```
 
-#### 4. 링크를 클릭했을 때 detail 페이지 내보내기
+### 4. 링크를 클릭했을 때 detail 페이지 내보내기
 **문제점**<br/>
 블로그 `object`가 매우 많아 졌을 때<br/>
 어떻게 `detail.html`파일을 **생성**하고 **출력**할 것인가?
@@ -63,7 +63,7 @@ def summary(self):
 3. 블로그 객체 미 존재 시 404 띄우기 (**Get Object or 404**)
 
 
-##### 1. url 패턴 디자인하기
+#### 1. url 패턴 디자인하기
 ```python
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -101,7 +101,7 @@ def home(request):
 `<type : 변수이름>`<br/>
 타입은 `int`, `str`, `uuid` 등....
 
-##### 2. views.py에 detail함수 작성하기
+#### 2. views.py에 detail함수 작성하기
 **특정 번호의 객체**를 가져와 사용해야 하기 때문에<br/>
 `home`함수와 같이 `objects`메서드 사용을 하면 안된다.<br/>
 따라서 `get_object_or_404(클래스, 검색 조건)`매서드를 사용<br/>
@@ -125,11 +125,11 @@ def detail(request, blog_id):
 
 <br/>
 
-### 4주차 - 2. 실습과 강의 중반부 메세지
+## 4주차 - 2. 실습과 강의 중반부 메세지
 4주차 - 1. pk, path converter, get_object_or_404 강의<br/>
 실습을 이어서 진행하겠습니다.
 
-##### 3. a태그에 템플릿 태그를 사용해 링크 연결하기
+#### 3. a태그에 템플릿 태그를 사용해 링크 연결하기
 `{% url "path" 인자 %}` 형식
 ```html
 <a href="{% url 'detail' blog.id %}"> ...more </a>
@@ -152,7 +152,7 @@ def detail(request, blog_id):
 {% endfor %}
 ```
 
-##### 4. detail.html 작성하기
+#### 4. detail.html 작성하기
 `detail.html`에 **템플릿 태그**를 사용해 본문 내용 출력
 
 ```html
@@ -166,7 +166,7 @@ def detail(request, blog_id):
 </p>
 ```
 
-#### 결과 화면
+### 결과 화면
 **home.html**<br/>
 <img src="./1st_images/Week_4_2_Test_Image_1.png" width="600" height="auto">
 
@@ -176,7 +176,7 @@ def detail(request, blog_id):
 **404 Not Found**<br/>
 <img src="./1st_images/Week_4_2_Test_Image_3.png" width="600" height="auto">
 
-#### 추가 내용
+### 추가 내용
 1. **복습을 합시다!**
 2. **오류와 에러는 성장 가능성이다!**
     - **답답해하지 말자!**
@@ -185,7 +185,7 @@ def detail(request, blog_id):
 
 <br/>
 
-### 4주차 - 3. blog project 1
+## 4주차 - 3. blog project 1
 **복습 겸 뼈대 만들기 진행중**
 
 기존의 내용을 복습하는 강의이기 때문에<br/>
@@ -193,16 +193,16 @@ def detail(request, blog_id):
 
 <br/>
 
-### 4주차 - 4. blog project 2
+## 4주차 - 4. blog project 2
 
-#### 해야할 것
+### 해야할 것
 1. Navbar에 글쓰기 항목 만들기
 2. 글쓰기 항목에 `url` 연결하기
 3. 데이터 입력 공간 생성 및 제출 버튼 기능 구현(`views.py`)하기
     + `request`가 들어오면 `new.html`을 띄우는 함수
     + `new.html`에서 입력한 내용을 `DB`에 등록하는 함수
 
-#### 1. new.html 구성
+### 1. new.html 구성
 다음과 같이 `new.html`을 구성
 ```html
 <div class="container">
@@ -220,7 +220,7 @@ def detail(request, blog_id):
 </div>
 ```
 
-#### 2. new 함수 구현 및 url 연결
+### 2. new 함수 구현 및 url 연결
 **views.py**
 ```python
 def new(request):
@@ -237,10 +237,10 @@ urlpatterns = [
 ]
 ```
 
-#### new 페이지 결과 화면
+### new 페이지 결과 화면
 <img src="./1st_images/Week_4_4_Test_Image_1.png" width="600" height="auto">
 
-#### 3. form태그 action url 연결 및 path 설정
+### 3. form태그 action url 연결 및 path 설정
 **new.html**
 ```html
 <form action="{% url 'create' %}">
@@ -259,7 +259,7 @@ urlpatterns = [
 ]
 ```
 
-#### 4. views.py에 create함수 정의
+### 4. views.py에 create함수 정의
 `create`함수는 입력받은 데이터를 `DB`에 저장하는 함수<br/>
 `django`의 `utils`의 `timezone`함수 추가<br/>
 `django`의 `shortcuts`의 `redirect`함수 추가<br/>
@@ -285,9 +285,9 @@ def create(request):
 
 <br/>
 
-### 4주차 - 5. portfolio (static)
+## 4주차 - 5. portfolio (static)
 
-### Django에서 다루는 파일의 종류
+## Django에서 다루는 파일의 종류
 1. **Static File (정적 파일)**
 
 **미리** 서버에 **저장**되어 있는 파일<br/>
@@ -297,13 +297,13 @@ def create(request):
 
 서버의 데이터들이 어느정도 **가공**된 다음 서비스되는 파일
 
-#### Static File (정적 파일)
+### Static File (정적 파일)
 1. 프로젝트 입장에서 이미 무엇인지 아는 파일
     + 개발할 때 미리 준비해둔 파일 = "**static**"
 2. 웹 서비스 이용자들이 업로드하는 파일
     + "**media**"
 
-#### Static File의 처리 과정
+### Static File의 처리 과정
 1. **Static 파일**의 **위치 찾기**
 2. **Static 파일**을 한 곳에 **모으기**
 
@@ -315,7 +315,7 @@ def create(request):
 3. **Static 파일**을 모으기
     + `$ python manage.py collectstatic` (명령어)
 
-#### 1. portfolio.html 생성 및 기본 연결
+### 1. portfolio.html 생성 및 기본 연결
 1. `portfolio`앱 생성
 ```
 $ python manage.py startapp portfolio
@@ -358,10 +358,10 @@ urlpatterns = [
 <a class="dropdown-item" href="{% url 'portfolio' %}">Portfolio</a>
 ```
 
-#### 2. portfolio앱에 static폴더 생성 및 파일 추가<br/>
+### 2. portfolio앱에 static폴더 생성 및 파일 추가<br/>
 <img src="./1st_images/Week_4_5_Test_Image_1.png" width="400" height="auto">
 
-#### 3. settings.py에 static폴더 경로 추가
+### 3. settings.py에 static폴더 경로 추가
 `STATICFILES_DIRS`은 `static`파일이 **어디 있는지** 알려주는 변수<br/>
 `STATIC_ROOT`은 `static`파일들이 **어디로 모일 것**인지 알려주는 변수
 ```python
@@ -374,7 +374,7 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-#### 4. static 파일들을 모으는 명령어 사용
+### 4. static 파일들을 모으는 명령어 사용
 ```
 $ python manage.py collectstatic
 ```
@@ -382,7 +382,7 @@ $ python manage.py collectstatic
 최상위 폴더에 `static`폴더가 생성<br/>
 <img src="./1st_images/Week_4_5_Test_Image_2.png" width="200" height="auto">
 
-#### 5. portfolio.html에서 static파일 사용
+### 5. portfolio.html에서 static파일 사용
 `portfolio.html` 최상단에 아래 코드 추가
 ```
 {% load staticfiles %}
@@ -398,13 +398,13 @@ $ python manage.py collectstatic
 
 <br/>
 
-### 4주차 - 6. portfolio (media)
+## 4주차 - 6. portfolio (media)
 
-#### Media 파일
+### Media 파일
 프로젝트로 **업로드**되는 파일<br/>
 `settings.py`에서 디렉토리 **경로**와 `url`지정
 
-#### Static vs Media
+### Static vs Media
 **Static**<br/>
 해당 파일이 어떤 파일인지 알아 내기 위하여 **외부와 통신 X**<br/>
 **Media**<br/>
@@ -418,7 +418,7 @@ $ python manage.py collectstatic
 | Static 파일이 어디있고<br/>`STATICFILES_DIRS = [...]` | Media 파일이 어느 url을 타고<br/>`MEDIA_URL` |
 | 어디로 모을지<br/>`STATIC_ROOT`                       | 어디로 모을 것인지<br/>`MEDIA_ROOT`          |
 
-#### Media 설정 방법
+### Media 설정 방법
 1. `settings.py`에서 **Media**설정 (디렉토리, `url`)
 
 ```python
@@ -506,7 +506,7 @@ def portfolio(request):
 {% endfor %}
 ```
 
-#### 실행 결과
+### 실행 결과
 데이터 저장 후 `admin` 페이지<br/>
 <img src="./1st_images/Week_4_5_Test_Image_4.png" width="400" height="auto">
 
@@ -515,13 +515,13 @@ def portfolio(request):
 
 <br/>
 
-### 4.5주차 - 템플릿 상속, url 관리
+## 4.5주차 - 템플릿 상속, url 관리
 
-#### 템플릿 상속
+### 템플릿 상속
 코드 **재사용**<br/>
 **일관된** UI 구성 및 **변경** 용이
 
-#### 템플릿 상속의 구현
+### 템플릿 상속의 구현
 1. 프로젝트 폴더에 `templates`폴더 생성
 2. `templates`폴더에 `base.html`생성
 
@@ -573,7 +573,7 @@ TEMPLATES = [
 {% endblock %}
 ```
 
-#### url의 효율적 관리
+### url의 효율적 관리
 1. 관리할 앱 폴더 내부에 `urls.py`생성
 2. `urls.py`에 `path` 작성
 

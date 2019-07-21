@@ -1,10 +1,10 @@
-### 6주차 - 1. form 이론
+## 6주차 - 1. form 이론
 
-#### Form(입력공간)
+### Form(입력공간)
 **Model**형식에 맞는 **Form**만들기<br/>
 `html`로 만드는 것은 **한계**가 존재
 
-#### forms.py
+### forms.py
 `html`의 `<form>`태그와 매칭<br/>
 
 **Model**을 기반으로한 입력공간 만들기<br/>
@@ -77,16 +77,16 @@ Form안의 내용 어떠한 태그 감싼 채 출력할 미리 결정 가능<br/
 
 <br/>
 
-### 6주차 - 2. form 실습
-#### 1. 사용할 앱 내부에 forms.py 생성
+## 6주차 - 2. form 실습
+### 1. 사용할 앱 내부에 forms.py 생성
 
-#### 2. 필요한 모듈 및 객체 추가
+### 2. 필요한 모듈 및 객체 추가
 ```python
 from django import forms
 from .model import Blog
 ```
 
-#### 3. 입력공간 클래스 정의
+### 3. 입력공간 클래스 정의
 어떤 `model`을 기반으로 할 것인지<br/>
 어떤 데이터를 입력받을 것 인지 `Meta`클래스에 정의
 ```python
@@ -100,7 +100,7 @@ class BlogPost(forms.ModelForm):
 
 ```
 
-#### 4. urls.py에 처리함수 url 생성
+### 4. urls.py에 처리함수 url 생성
 ```python
 urlpatterns = [
     path('<int:blog_id>/', views.detail, name="detail"),
@@ -111,7 +111,7 @@ urlpatterns = [
 ]
 ```
 
-#### 5. views.py에 처리함수 작성
+### 5. views.py에 처리함수 작성
 `forms.py`에 작성한 클래스 추가<br/>
 ```python
 from .forms import BlogPost
@@ -146,7 +146,7 @@ def blogpost(request):
 입력되지 않은 나머지 값들을 임의로 입력해 준 후 저장<br/>
 `request`방식이 **GET**일 경우 빈 페이지 출력
 
-#### 6. html에 작성한 forms 사용
+### 6. html에 작성한 forms 사용
 `as_table` 템플릿 메서드 사용<br/>
 `table`형식으로 감싸서 `form` 사용
 ```html
@@ -160,7 +160,7 @@ def blogpost(request):
 </form>
 ```
 
-#### 추가 - 임의의 입력공간 생성하기
+### 추가 - 임의의 입력공간 생성하기
 ```python
 class BlogPost(forms.Form):
     email = forms.EmailField()

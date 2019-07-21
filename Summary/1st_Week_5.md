@@ -1,4 +1,4 @@
-### 5주차 - 1. 로그인, 회원가입 이론
+## 5주차 - 1. 로그인, 회원가입 이론
 `Django`에서 제공하는 **함수** 이용
 
 ### 회원가입 로그인 로그아웃
@@ -22,7 +22,7 @@ from django.contrib import auth
 로그아웃 함수
 - `auth.logout(request)` : 로그아웃
 
-#### http Method
+### http Method
 `http`상에 정보를 주고받는 방식<br/>
 ```html
 <form action="{% url 'thisisurl' %}">
@@ -43,9 +43,9 @@ from django.contrib import auth
 
 <br/>
 
-### 5주차 - 2. 로그인, 회원가입 실습
-#### 1. 계정을 관리 할 앱 생성
-#### 2. `settings.py`에 앱 추가
+## 5주차 - 2. 로그인, 회원가입 실습
+### 1. 계정을 관리 할 앱 생성
+### 2. `settings.py`에 앱 추가
 
 ```python
 INSTALLED_APPS = [
@@ -61,7 +61,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-#### 3. 앱에 로그인, 회원가입 템플릿 추가
+### 3. 앱에 로그인, 회원가입 템플릿 추가
 `base.html`에 템플릿 태그로 `url`생성
 ```html
 <li class="nav-item">
@@ -72,7 +72,7 @@ INSTALLED_APPS = [
 </li>
 ```
 
-#### 4. 계정 관리 앱 `url`설정
+### 4. 계정 관리 앱 `url`설정
 
 `accounts`앱의 `urls.py`
 ```python
@@ -96,7 +96,7 @@ urlpatterns = [
 ]
 ```
 
-#### 5. 회원가입, 로그인 페이지 form 태그 작성
+### 5. 회원가입, 로그인 페이지 form 태그 작성
 **POST**방식 사용<br/>
 **csrf_token**은 보안을 위해 사용
 
@@ -117,7 +117,7 @@ urlpatterns = [
 ```
 
 
-#### 6. 계정 관리 앱의 `views.py`작성
+### 6. 계정 관리 앱의 `views.py`작성
 `User` 모듈과 `auth` 모듈 추가<br/>
 ```python
 from django.shortcuts import render, redirect
@@ -178,7 +178,7 @@ def signup(request):
     return render(request, "signup.html")
 ```
 
-#### 7. 로그아웃 기능 구현
+### 7. 로그아웃 기능 구현
 `urls.py`에 `path`추가
 ```python
 urlpatterns = [
@@ -202,11 +202,11 @@ def logout(request):
 
 <br/>
 
-### 5주차 - 3. Pagination 이론
+## 5주차 - 3. Pagination 이론
 **대규모 데이터**를 다루는 웹서비스에서 **필수**적인 기능<br/>
 `home.html`과 `views.py`를 수정하여 구현
 
-#### views.py
+### views.py
 `Django`에서 기본적으로 지원하는 기능 사용
 
 추가할 모듈
@@ -227,14 +227,14 @@ Paginator(어떤 객체를, 한페이지당 몇 개 씩)
 3. 원하는 페이지를 `html`에 띄우기<br/>
 페이지 객체의 메소드함수 + template 언어
 
-#### Paginator Class Vs Page Class
+### Paginator Class Vs Page Class
 | Paginator Object        | Page Object         |
 | ----------------------- | ------------------- |
 | 잘려진 식빵 조각 뭉텅이 | 잘려진 식빵 한 조각 |
 
 최종 목적 : Page Object
 
-#### Page 객체의 메소드 함수
+### Page 객체의 메소드 함수
 주로 사용하는 메소드 함수
 
 | 함수                        | 뜻                                      |
@@ -248,7 +248,7 @@ Paginator(어떤 객체를, 한페이지당 몇 개 씩)
 | page.has_previous()         | 이전 페이지가 있으면 True, 없으면 False |
 | page.previous_page_number() | 이전 페이지 번호 반환                   |
 
-#### 원하는 페이지 번호를 얻는 방법
+### 원하는 페이지 번호를 얻는 방법
 아래와 같은 코드를 사용
 ```python
 page = request.GET.get('page')
@@ -270,13 +270,13 @@ page = request.GET.get('page')
 
 <br/>
 
-### 5주차 - 4. Pagination 실습
-#### 1. 필요한 모듈 import
+## 5주차 - 4. Pagination 실습
+### 1. 필요한 모듈 import
 ```python
 from django.core.paginator import Paginator
 ```
 
-#### 2. views.py의 home함수 수정하기
+### 2. views.py의 home함수 수정하기
 ```python
 def home(request):
     blog_list = Blog.objects.all()
@@ -291,7 +291,7 @@ def home(request):
     })
 ```
 
-#### 3. home.html 수정
+### 3. home.html 수정
 기존에는 `all`매서드를 사용해 모든 객체를 가져와 사용<br/>
 **Pagination** 기능을 사용하면 한 페이지씩 포스트를 가져와 사용
 ```html
@@ -319,19 +319,19 @@ def home(request):
 
 <br/>
 
-### 5.5주차 - Faker
+## 5.5주차 - Faker
 
-#### 가짜 데이터, 왜 필요한가?
+### 가짜 데이터, 왜 필요한가?
 **데이터가 많은 상황**을 염두해 둔 **기능을 구현**할 때<br/>
 데이터가 많은 상황을 **재현하기 위해**서 사용
 
-#### 설치 명령어
+### 설치 명령어
 **가상 환경**에 설치
 ```
 $ pip install faker
 ```
 
-#### 사용 방법
+### 사용 방법
 ```python
 from faker import Faker       # Faker 클래스 추가
 
