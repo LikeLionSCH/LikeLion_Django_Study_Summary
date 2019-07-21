@@ -14,12 +14,13 @@ Department of<br/> Computer Software Engineering
 [[Cheat Sheet]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/Cheat_Sheet.md)
 
 ## 1학기 요약
-[[Week 1]](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1.md)<br/>
+
+### 1주차
 0주자 - 1.오리엔테이션 **[[완료]]**<br/>
-1주차 - 1.기본환경 셋팅 **[[완료]((https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_1.md))]**<br/>
-1주차 - 2.Hello World 이론 **[[완료]((https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_2.md))]**<br/>
-1주차 - 3.Hello World 실습 **[[완료]((https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_3.md))]**<br/>
-1.5주차 - MTV 패턴 **[[완료]((https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_4.md))]**<br/>
+1주차 - 1.기본환경 셋팅 **[[완료](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_1.md)]**<br/>
+1주차 - 2.Hello World 이론 **[[완료](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_2.md)]**<br/>
+1주차 - 3.Hello World 실습 **[[완료](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_3.md)]**<br/>
+1.5주차 - MTV 패턴 **[[완료](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_4.md)]**<br/>
 
 <br/>
 
