@@ -83,8 +83,8 @@ Department of<br/> Computer Software Engineering
 
 ### 1주차
 1주차 - 1. JSON **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1/2nd_Week_1_1.md)]**<br/>
-1주차 - 2. Http Request & Response **[진행중]**<br/>
-1주차 - 2.5 httpie **[진행중]**<br/>
-1주차 - 3. CBV (1) **[진행중]**<br/>
-1주차 - 4. CBV (2) **[진행중]**<br/>
-1주차 - 5. CBV (3) **[진행중]**<br/>
+1주차 - 2. Http Request & Response **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1/2nd_Week_1_2.md)]**<br/>
+1주차 - 2.5 httpie **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1/2nd_Week_1_3.md)]**<br/>
+1주차 - 3. CBV (1) **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1/2nd_Week_1_4.md)]**<br/>
+1주차 - 4. CBV (2) **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1/2nd_Week_1_5.md)]**<br/>
+1주차 - 5. CBV (3) **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1/2nd_Week_1_6.md)]**<br/>
