@@ -22,7 +22,6 @@ Department of<br/> Computer Software Engineering
 1주차 - 3.Hello World 실습 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_3.md)]**<br/>
 1.5주차 - MTV 패턴 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_1/1st_Week_1_4.md)]**<br/>
 
-<br/>
 
 ### 2주차
 2주자 - 1.wordcount 이론 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_2/1st_Week_2_1.md)]**<br/>
@@ -30,7 +29,6 @@ Department of<br/> Computer Software Engineering
 2주차 - 3.wordcount 실습 part 2 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_2/1st_Week_2_3.md)]**<br/>
 2.5주차 - Git **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_2/1st_Week_2_4.md)]**<br/>
 
-<br/>
 
 ### 3주차
 3주차 - 1.model&admin 이론 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_3/1st_Week_3_1.md)]**<br/>
@@ -38,7 +36,6 @@ Department of<br/> Computer Software Engineering
 3주차 - 3.queryset & method **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_3/1st_Week_3_3.md)]**<br/>
 3.5주차 - bootstrap **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_3/1st_Week_3_4.md)]**<br/>
 
-<br/>
 
 ### 4주차
 4주차 - 1. pk, path converter, get_object_or_404 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_4/1st_Week_4_1.md)]**<br/>
@@ -49,7 +46,6 @@ Department of<br/> Computer Software Engineering
 4주차 - 6. portfolio (media) **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_4/1st_Week_4_6.md)]**<br/>
 4.5주차 - 템플릿 상속, url 관리 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_4/1st_Week_4_7.md)]**<br/>
 
-<br/>
 
 ### 5주차
 5주차 - 1. 로그인, 회원가입 이론 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_5/1st_Week_5_1.md)]**<br/>
@@ -58,14 +54,12 @@ Department of<br/> Computer Software Engineering
 5주차 - 4. Pagination 실습 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_5/1st_Week_5_4.md)]**<br/>
 5.5주차 - Faker **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_5/1st_Week_5_5.md)]**<br/>
 
-<br/>
 
 ### 6주차
 6주차 - 1. form 이론 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_6/1st_Week_6_1.md)]**<br/>
 6주차 - 2. form 실습 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_6/1st_Week_6_2.md)]**<br/>
 6.5주차 - heroku에 배포하기 **[Summary]**<br/>
 
-<br/>
 
 ### 7주차
 7주차 - 1. 소셜 로그인 이론 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_7/1st_Week_7_1.md)]**<br/>
@@ -74,7 +68,6 @@ Department of<br/> Computer Software Engineering
 7주차 - 4. API 실습 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_7/1st_Week_7_4.md)]**<br/>
 7.5주차 - 썸네일 만들기 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_7/1st_Week_7_5.md)]**<br/>
 
-<br/>
 
 ### 8주차
 8주차 - 1. app 재사용 이론 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/1st_Week_8/1st_Week_8_1.md)]**<br/>
