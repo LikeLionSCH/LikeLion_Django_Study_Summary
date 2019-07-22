@@ -88,3 +88,10 @@ Department of<br/> Computer Software Engineering
 1주차 - 3. CBV (1) **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1/2nd_Week_1_4.md)]**<br/>
 1주차 - 4. CBV (2) **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1/2nd_Week_1_5.md)]**<br/>
 1주차 - 5. CBV (3) **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_1/2nd_Week_1_6.md)]**<br/>
+
+
+### 2주차
+2주차 - 1. REST Architecture **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_2_1.md)]**<br/>
+2주차 - 2. JSON 직렬화 - Serializer **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_2_2.md)]**<br/>
+2주차 - 3. Serializer 실습 - 코드작성 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_2_3.md)]**<br/>
+2주차 - 4. Serializer 실습 - API 서버 들여다보기 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_2_4.md)]**<br/>
