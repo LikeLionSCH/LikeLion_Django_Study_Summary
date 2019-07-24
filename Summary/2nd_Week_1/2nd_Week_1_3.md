@@ -132,5 +132,5 @@ HTTP 상태코드 **200**으로 요청 성공 확인<br/>
 <img src="../2nd_images/Week_1_2_Test_Image_12.png" width="400" height="auto"><br/>
 
 **json**형식으로 데이터를 요청했기 때문에<br/>
-**json**으로 데이터가 전송되고 **form**이 비어있는 것을 확인할 수 있다.
+**json**으로 데이터가 전송되고 **form**이 비어있는 것을 확인할 수 있다.<br/>
 <img src="../2nd_images/Week_1_2_Test_Image_15.png" width="400" height="auto"><br/>
