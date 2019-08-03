@@ -31,14 +31,14 @@
 <img src="../2nd_images/Week_1_6_Test_Image_1.png" width="400" height="auto">
 
 ### 실행 스크린샷
-| Create View Test            | <img src="../2nd_images/Week_1_6_Test_Image_2.png" width="300" height="auto"> |
-| --------------------------- | ----------------------------------------------------------------------------- |
-| List View Test              | <img src="../2nd_images/Week_1_6_Test_Image_3.png" width="300" height="auto"> |
-| Detail View Test            | <img src="../2nd_images/Week_1_6_Test_Image_4.png" width="300" height="auto"> |
-| Update View Test            | <img src="../2nd_images/Week_1_6_Test_Image_5.png" width="300" height="auto"> |
-| After Update List View Test | <img src="../2nd_images/Week_1_6_Test_Image_6.png" width="300" height="auto"> |
-| Delete View Test            | <img src="../2nd_images/Week_1_6_Test_Image_7.png" width="300" height="auto"> |
-| After Delete List View Test | <img src="../2nd_images/Week_1_6_Test_Image_8.png" width="300" height="auto"> |
+|        Create View Test         | <img src="../2nd_images/Week_1_6_Test_Image_2.png" width="300" height="auto"> |
+|:-------------------------------:| ----------------------------------------------------------------------------- |
+|       **List View Test**        | <img src="../2nd_images/Week_1_6_Test_Image_3.png" width="300" height="auto"> |
+|      **Detail View Test**       | <img src="../2nd_images/Week_1_6_Test_Image_4.png" width="300" height="auto"> |
+|      **Update View Test**       | <img src="../2nd_images/Week_1_6_Test_Image_5.png" width="300" height="auto"> |
+| **After Update List View Test** | <img src="../2nd_images/Week_1_6_Test_Image_6.png" width="300" height="auto"> |
+|      **Delete View Test**       | <img src="../2nd_images/Week_1_6_Test_Image_7.png" width="300" height="auto"> |
+| **After Delete List View Test** | <img src="../2nd_images/Week_1_6_Test_Image_8.png" width="300" height="auto"> |
 
 
 ### 임의의 이름으로 템플릿 작성하기
