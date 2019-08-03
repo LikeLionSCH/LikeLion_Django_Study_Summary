@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Class Base View</title>
+    </head>
+    <body>
+        <a href="{% url 'create' %}"> 추가 </a>
+        
+        <br>
+        
+        {% for blog in blog_list %}
+        <h2> {{ blog.title }} </h2>
+        <h2> {{ blog.created_at }} </h2>
+        <p> {{ blog.body }} </p>
+        
+        <a href="{% url 'read' blog.id %}"> 자세히보기 </a><br>
+        <a href="{% url 'update' blog.id %}"> 수정 </a><br>
+        <a href="{% url 'delete' blog.id %}"> 삭제 </a><br>
+        {% endfor %}
+    </body>
+</html>

@@ -10,6 +10,8 @@ from .models import ClassBlog
 
 
 class BlogView(ListView):
+    template_name = 'classBaseCrud/list.html'
+    context_object_name = 'blog_list'
     model = ClassBlog
 
 
@@ -20,6 +22,7 @@ class BlogCreate(CreateView):
 
 
 class BlogRead(DetailView):
+    context_object_name = "blog"
     model = ClassBlog
     
 
@@ -30,5 +33,5 @@ class BlogUpdate(UpdateView):
 
 
 class BlogDelete(DeleteView):
-    mdoel = ClassBlog
+    model = ClassBlog
     success_url = reverse_lazy("list")

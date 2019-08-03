@@ -52,7 +52,7 @@ import classBaseCrud.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cbv/', include(classBaseCrud.urls)),
+    path('', include(classBaseCrud.urls)),
 ]
 ```
 
@@ -124,6 +124,6 @@ class BlogUpdate(UpdateView):
 
 
 class BlogDelete(DeleteView):
-    mdoel = ClassBlog
+    model = ClassBlog
     success_url = reverse_lazy("list")
 ```
