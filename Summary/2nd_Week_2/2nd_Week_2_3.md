@@ -117,4 +117,4 @@ urlpatterns = [
 ```
 
 ### 실행 결과
-<img src="../2nd_images/Week_2_3_Test_Image_1.png" width="700" height="auto">
+<img src="../2nd_images/Week_2_3_Test_Image_1.png" width="900" height="auto">
