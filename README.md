@@ -95,3 +95,11 @@ Department of<br/> Computer Software Engineering
 2주차 - 2. JSON 직렬화 - Serializer **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_2_2.md)]**<br/>
 2주차 - 3. Serializer 실습 - 코드작성 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_2_3.md)]**<br/>
 2주차 - 4. Serializer 실습 - API 서버 들여다보기 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_2_4.md)]**<br/>
+
+### 3주차
+3주차 - 1. View of DRF **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_3_1.md)]**<br/>
+3주차 - 2. APIView **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_3_2.md)]**<br/>
+3주차 - 3. mixins **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_3_3.md)]**<br/>
+3주차 - 4. generic CBV **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_3_4.md)]**<br/>
+3주차 - 5. ViewSet **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_3_5.md)]**<br/>
+3주차 - 6. Router **[[Summary](https://github.com/LikeLionSCH/LikeLion_Study_Summary/blob/master/Summary/2nd_Week_2/2nd_Week_3_6.md)]**<br/>
