@@ -14,7 +14,7 @@
 
 [[Cheat Sheet]](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/Cheat_Sheet.md)
 
-## 1학기 요약
+## 1학기 커리큘럼
 
 ### 1주차
 
@@ -81,7 +81,7 @@
 
 ---
 
-## 2학기 요약
+## 2학기 커리큘럼
 
 ### 1주차
 
