@@ -107,3 +107,14 @@
 3주차 - 4. generic CBV **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_3/2nd_Week_3_4.md)]**<br/>
 3주차 - 5. ViewSet **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_3/2nd_Week_3_5.md)]**<br/>
 3주차 - 6. Router **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_3/2nd_Week_3_6.md)]**<br/>
+
+### 4주차
+
+4주차 - 1. pagination **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_4/2nd_Week_4_1.md)]**<br/>
+4주차 - 2. filtering and search **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_4/2nd_Week_4_2.md)]**<br/>
+4주차 - 3. Authentication **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_4/2nd_Week_4_3.md)]**<br/>
+4주차 - 4. permission **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_4/2nd_Week_4_4.md)]**<br/>
+4주차 - 5. token인증 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_4/2nd_Week_4_5.md)]**<br/>
+4주차 - 6. 프로젝트 안내 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_4/2nd_Week_4_6.md)]**<br/>
+4주차 - 7. 프로젝트 실습 1 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_4/2nd_Week_4_7.md)]**<br/>
+4주차 - 8. 프로젝트 실습 2 **[[Summary](https://github.com/LikeLionSCH/LikeLion_Django_Study_Summary/blob/master/Summary/2nd_Week_4/2nd_Week_4_8.md)]**<br/>
