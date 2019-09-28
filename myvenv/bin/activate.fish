@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/blueprint/Documents/Like_Lion_7th/LikeLion_Study_Summary/myvenv"
+set -gx VIRTUAL_ENV "/Users/blueprint/Documents/Like_Lion_7th/LikeLion_Django_Study_Summary/myvenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
@@ -52,7 +52,7 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
         set -l old_status $status
 
         # Prompt override?
-        if test -n "(myvenv) "            
+        if test -n "(myvenv) "
             printf "%s%s" "(myvenv) " (set_color normal)
         else
             # ...Otherwise, prepend env

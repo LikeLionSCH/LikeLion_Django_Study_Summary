@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/blueprint/Documents/Like_Lion_7th/LikeLion_Study_Summary/myvenv"
+VIRTUAL_ENV="/Users/blueprint/Documents/Like_Lion_7th/LikeLion_Django_Study_Summary/myvenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
