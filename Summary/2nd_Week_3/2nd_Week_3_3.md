@@ -9,7 +9,7 @@
 
 ### Mixins 적용해보기
 
-### 1. views.py 작성하기 전
+#### 1. views.py 작성하기 전
 
 이전과 동일한 코드이기 때문에 생략합니다.
 
@@ -20,9 +20,9 @@
 5.  `models.py`에 모델 작성 및 `migrate`
 6.  `serializer.py`생성 및 작성
 
-### 2. views.py 작성하기
+#### 2. views.py 작성하기
 
-#### 1) 필요한 모듈 추가하기
+##### 1) 필요한 모듈 추가하기
 
 ```python
 from .models import Post
@@ -31,7 +31,7 @@ from rest_framework import generics
 from rest_framework import mixins
 ```
 
-#### 2) PostList 클래스 작성하기
+##### 2) PostList 클래스 작성하기
 
 `APIView`를 상속해서 작성한 `PostList` 클래스와 동일한 기능을 한다.<br>
 `mixins`의 `ListModelMixin`과 `CreateModelMixin`, `generics`의 `GenericAPIView`를 상속<br>
@@ -53,7 +53,7 @@ class PostList(mixins.ListModelMixin,
         return self.create(request, *args, **kwargs)
 ```
 
-### 3) PostDetail 클래스 작성하기
+##### 3) PostDetail 클래스 작성하기
 
 `PostList`를 작성한 것과 동일하게 작성<br>
 각 메서드에 필요한 `mixins` 모듈을 **상속**하고 **쿼리셋**, `serializer`등록 후<br>
@@ -77,7 +77,7 @@ class PostDetail(mixins.RetrieveModelMixin,
         return self.destroy(request, *args, **kwargs)
 ```
 
-### 4) urls.py 작성하기
+#### 3. urls.py 작성하기
 
 이전과 동일하게 앱 내부에 `urls.py` 생성 및 작성
 
@@ -107,7 +107,7 @@ urlpatterns = [
 ]
 ```
 
-### 실행 결과
+#### 실행 결과
 
 `http://127.0.0.1:8000/post`로 접속하면 잘 작동하는 것을 확인할 수 있다.<br>
 

@@ -67,9 +67,9 @@ class PostSerializer(serializers.ModelSerializer):
         fields = "__all__"
 ```
 
-### 2. views.py 작성하기
+#### 2. views.py 작성하기
 
-#### 1) 필요한 모듈 추가
+##### 1) 필요한 모듈 추가
 
 `APIView`를 상속받은 **CBV**를 작성하기 위해 아래의 모듈을 추가한다.<br>
 
@@ -82,7 +82,7 @@ from rest_framework import status
 from rest_framework.views import APIView
 ```
 
-#### 2) 객체들의 목록을 가져오는 PostList 작성
+##### 2) 객체들의 목록을 가져오는 PostList 작성
 
 `GET`매서드는 다수의 `Post`객체를 반환하는 메서드다.<br>
 다수의 객체를 **직렬화**하기 위해서 `PostSerializer`에 `many=True`를 넘겨줘야 한다.<br>
@@ -110,7 +110,7 @@ class PostList(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 ```
 
-### 3) 객체의 상세 정보를 받는 PostDetail 작성
+##### 3) 객체의 상세 정보를 받는 PostDetail 작성
 
 `PostList`클래스와 다르게 각각의 함수에 `pk`값을 인자로 받는다.<br>
 `get_object`함수는 `get_object_or_404`함수와 동일한 기능을 한다.<br>
@@ -148,7 +148,7 @@ class PostDetail(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 ```
 
-### 4) urls.py 작성하기
+#### 3. urls.py 작성하기
 
 -   App내부의 `urls.py`
 
@@ -183,7 +183,7 @@ urlpatterns = [
 ]
 ```
 
-### 실행결과
+#### 실행결과
 
 `http://127.0.0.1:8000/`에 접속해보자.<br>
 아래와 같은 결과가 나오는 것을 확인할 수 있다.<br>
