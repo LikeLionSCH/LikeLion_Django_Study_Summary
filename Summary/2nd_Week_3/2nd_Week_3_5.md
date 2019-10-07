@@ -46,10 +46,6 @@ class PostViewSet(viewsets.ReadOnlyModelViewSet):
 
 ### ModelViewSet
 
-#### 상속 받은 클래스
-
--
-
 #### 예시
 
 이전과 동일하게 어떠한 **모델**과 `serializer`를 사용할 건지 등록한다.<br>
