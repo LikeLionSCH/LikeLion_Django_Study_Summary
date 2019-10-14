@@ -141,7 +141,6 @@ from rest_framework import viewsets
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all().order_by('id')
     serializer_class = PostSerializer
-
 ```
 
 ### CustomizedPagination 클래스 작성하기
