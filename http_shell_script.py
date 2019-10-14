@@ -1,6 +1,7 @@
 # !usr/bin/python
 import sys
 import os
+import json
 
 
 def print_method(method):
@@ -56,7 +57,12 @@ if METHOD == 'GET':
 
     print()
     print("############### RESPONSE  ##################")
-    print(result)
+    print(
+        json.dumps(
+            json.loads(result),
+            indent=4,
+            sort_keys=True)
+    )
     print("############### RESPONSE  ##################")
 
 
@@ -76,7 +82,12 @@ else:
 
     print()
     print("############### RESPONSE  ##################")
-    print(result)
+    print(
+        json.dumps(
+            json.loads(result),
+            indent=4,
+            sort_keys=True)
+    )
     print("############### RESPONSE  ##################")
 
 
