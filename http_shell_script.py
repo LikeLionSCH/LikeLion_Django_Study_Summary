@@ -3,35 +3,50 @@ import sys
 import os
 
 
+def print_method(method):
+
+    if method == 'GET':
+        print("  ##########     ###########     ###########")
+        print(" ###             ##                  ##     ")
+        print(" ##              ##                  ##     ")
+        print(" ##     ####     ###########         ##     ")
+        print(" ##       ##     ##                  ##     ")
+        print(" ###      ##     ##                  ##     ")
+        print("  ##########     ###########         ##     ")
+
+    elif method == 'POST':
+        print(" ########     ######      ######    ########")
+        print(" ##     ##   ##     ##   ###           ##   ")
+        print(" ##     ##   ##     ##   ###           ##   ")
+        print(" ########    ##     ##    ######       ##   ")
+        print(" ##          ##     ##        ###      ##   ")
+        print(" ##          ##     ##        ###      ##   ")
+        print(" ##           #######     ######       ##   ")
+
+
 def print_success_request():
     print()
-    print("##############################################")
-    print("############ SUCCESS SEND REQUEST ############")
-    print("##############################################")
+    print("############################################")
+    print("########### SUCCESS SEND REQUEST ###########")
+    print("############################################")
 
 
 def print_request_message(url):
     print()
-    print("############## REQUEST MESSAGE ###############")
+    print("############# REQUEST MESSAGE ##############")
     print(url)
-    print("##############################################")
+    print("############################################")
 
 
-print("##############################################")
-print("############# HTTP SHELL SCRIPT ##############")
-print("##############################################")
+print("############################################")
+print("############ HTTP SHELL SCRIPT #############")
+print("############################################")
 print()
 
 METHOD = sys.argv[1]
 
 if METHOD == 'GET':
-    print(" ##########    ############      ###########")
-    print("###            ##                    ##     ")
-    print("##             ##                    ##     ")
-    print("##     ####    ############          ##     ")
-    print("##       ##    ##                    ##     ")
-    print("###      ##    ##                    ##     ")
-    print(" ##########    ############          ##     ")
+    print_method(METHOD)
 
     URL = "http GET http://127.0.0.1:8000/post/"
 
@@ -40,19 +55,15 @@ if METHOD == 'GET':
     result = os.popen(URL).read()
 
     print()
+    print("############### RESPONSE  ##################")
     print(result)
+    print("############### RESPONSE  ##################")
 
 
 else:
     start, end = int(sys.argv[2]), int(sys.argv[3]) + 1
 
-    print("##########     ########      #######    ########")
-    print("##       ##   ##      ##    ###            ##   ")
-    print("##       ##   ##      ##    ###            ##   ")
-    print("##########    ##      ##     ######        ##   ")
-    print("##            ##      ##         ###       ##   ")
-    print("##            ##      ##         ###       ##   ")
-    print("##             ########      #######       ##   ")
+    print_method(METHOD)
 
     for i in range(start, end):
         PREFIX = "http --form POST http://127.0.0.1:8000/post/ "
@@ -63,11 +74,13 @@ else:
         print_success_request()
         result = os.popen(URL).read()
 
-        print()
-        print(result)
+    print()
+    print("############### RESPONSE  ##################")
+    print(result)
+    print("############### RESPONSE  ##################")
 
 
 print()
-print("#############################################")
-print("################ END SCRIPT  ################")
-print("#############################################")
+print("############################################")
+print("############### END SCRIPT  ################")
+print("############################################")
