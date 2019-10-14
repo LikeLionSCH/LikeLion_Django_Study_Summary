@@ -80,15 +80,15 @@ else:
         print_success_request()
         result = os.popen(URL).read()
 
-    print()
-    print("############### RESPONSE  ##################")
-    print(
-        json.dumps(
-            json.loads(result),
-            indent=4,
-            sort_keys=True)
-    )
-    print("############### RESPONSE  ##################")
+        print()
+        print("############### RESPONSE  ##################")
+        print(
+            json.dumps(
+                json.loads(result),
+                indent=4,
+                sort_keys=True)
+        )
+        print("############### RESPONSE  ##################")
 
 
 print()
