@@ -98,7 +98,7 @@ urlpatterns = [
 
 현재 30개의 데이터가 있는 것을 확인할 수 있다.<br>
 
-<img src="../2nd_images/Week_4_1_Test_Image_1.png" width="300" height="auto">
+<img src="../2nd_images/Week_4_1_Test_Image_1.png" width="300" height="auto"><br>
 <img src="../2nd_images/Week_4_1_Test_Image_2.png" width="300" height="auto">
 
 ### DRF로 Pagination 구현하기
@@ -124,5 +124,74 @@ REST_FRAMEWORK = {
 총 데이터의 개수인 `count`와 이전 10개의 레코드 주소인 `previous`<br>
 다음 10개의 레코드를 위한 `next`또한 `RESPONSE`에 생겼다.<br>
 
-<img src="../2nd_images/Week_4_1_Test_Image_3.png" width="300" height="auto">
+<img src="../2nd_images/Week_4_1_Test_Image_3.png" width="300" height="auto"><br>
 <img src="../2nd_images/Week_4_1_Test_Image_4.png" width="300" height="auto">
+
+#### 유의 사항
+
+**Pagination**을 사용할 때는 반드시 레코드를 **정렬**해 사용해야 한다.<br>
+따라서 `views.py`를 아래와 같이 `id`로 **정렬**하도록 수정해준다.<br>
+
+```python
+from .models import Post
+from .serializer import PostSerializer
+from rest_framework import viewsets
+
+
+class PostViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all().order_by('id')
+    serializer_class = PostSerializer
+
+```
+
+### CustomizedPagination 클래스 작성하기
+
+아래와 같이 `PageNumberPagination`을 상속받는 클래스를 선언하고<br>
+클래스 내부에 `page_size`변수에 원하는 레코드의 수를 지정한 후<br>
+적용할 모델의 `ViewSet`의 `pagination_class`에 클래스를 지정하면 된다.<br>
+
+```python
+...
+from rest_framework.pagination import PageNumberPagination
+
+class MyPagination(PageNumberPagination):
+    page_size = 6
+
+class PostViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all().order_by('id')
+    serializer_class = PostSerializer
+    pagination_class = MyPagination
+```
+
+#### CustomizedPagination 테스트
+
+설정한 `page_size`가 잘 적용되는 것을 확인할 수 있다.<br>
+
+<img src="../2nd_images/Week_4_1_Test_Image_5.png" width="300" height="auto"><br>
+
+#### 코드 정돈하기
+
+1. `pagination.py` 생성 및 클래스 옮기기
+
+```python
+from rest_framework.pagination import PageNumberPagination
+
+
+class MyPagination(PageNumberPagination):
+    page_size = 6
+```
+
+2. `views.py`에 추가해 사용하기
+
+```python
+from .models import Post
+from .serializer import PostSerializer
+from .pagination import MyPagination
+from rest_framework import viewsets
+
+
+class PostViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all().order_by('id')
+    serializer_class = PostSerializer
+    pagination_class = MyPagination
+```
