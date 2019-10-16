@@ -158,7 +158,7 @@ class UserPostViewSet(viewsets.ModelViewSet):
 구현하기 전 아래와 같이 각각의 `user`로 몇개의 글을 생성했다.<br>
 <img src="../2nd_images/Week_4_2_Test_Image_2.png" width="600" height="auto"><br>
 
-#### 1) 쿼리셋 조작하기
+#### 1. 쿼리셋 조작하기
 
 아래와 같이 클래스 내부에 `get_queryset`함수를 구현하여 사용한다.<br>
 `super`를 사용해 **부모 클래스**의 `get_queryset`함수로 **쿼리셋**을 가져온다.<br>
@@ -170,7 +170,7 @@ def get_queryset(self):
         return qs
 ```
 
-#### 2) 쿼리셋 필터링하기
+#### 2. 쿼리셋 필터링하기
 
 `filter`, `exclude`와 같은 매서드를 사용한다.<br>
 사용자(`autor`)를 이용해 필터링하기 위해 아래와 같이 작성한다.<br>
@@ -208,7 +208,7 @@ def get_queryset(self):
 
 현재 **로그인 되어 있는 사용자**가 **생성한 객체**를 잘 가져오는 것을 볼 수 있다.<br>
 
-#### 완성도 높이기
+#### 3. 완성도 높이기
 
 **로그인하지않고** 해당 API를 사용하려고하면 `Anonymous User`로<br>
 접근하게 되어 **에러**가 **발생**하는 것을 확인할 수 있다.<br>
