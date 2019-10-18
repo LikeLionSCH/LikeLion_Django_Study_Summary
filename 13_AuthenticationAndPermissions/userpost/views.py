@@ -3,11 +3,15 @@ from .serializer import UserPostSerializer
 from rest_framework import viewsets
 from rest_framework.filters import SearchFilter
 from rest_framework.authentication \
-    import BasicAuthentication, SessionAuthentication
+    import SessionAuthentication, TokenAuthentication
+from rest_framework.permissions \
+    import AllowAny, IsAuthenticated, IsAuthenticatedOrReadOnly, IsAdminUser
 
 
 class UserPostViewSet(viewsets.ModelViewSet):
-    authentication_classes = [BasicAuthentication, SessionAuthentication]
+    authentication_classes = [TokenAuthentication, SessionAuthentication]
+    permission_classes = [IsAdminUser]
+
     queryset = UserPost.objects.all()
     serializer_class = UserPostSerializer
 
