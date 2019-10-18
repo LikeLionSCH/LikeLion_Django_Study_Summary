@@ -5,12 +5,11 @@ from drf_yasg import openapi
 swagger_info = openapi.Info(
     title="Like Lion REST API",
     default_version='v1',
-    description="""
-        🦁Like Lion 7th DRF Project.
-        The `swagger-ui` view can be found [here](http://127.0.0.1:8000/swagger/)
-        The `ReDoc` view can be found [here]()
-        The swagger YAML document can be found [here](http://127.0.0.1:8000/swagger.yaml)
-        """,
+    description='''<h3>🦁 Like Lion 7th Django restframework Project.</h3>
+    The `swagger-ui` view can be found [here](http://127.0.0.1:8000/swagger/)
+    The `ReDoc` view can be found [here](http://127.0.0.1:8000/docs/)
+    The swagger YAML document can be found [here](http://127.0.0.1:8000/swagger.yaml)
+    ''',
     contact=openapi.Contact(email="alstn2468_@naver.com"),
     license=openapi.License(name="MIT License"),
 )
