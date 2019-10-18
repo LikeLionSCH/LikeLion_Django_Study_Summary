@@ -4,10 +4,10 @@
 
 -   [ ] Authentication
 -   [ ] Pagination
--   [ ] Filter
--   [ ] Essay
-    -   [ ] Title
-    -   [ ] Body
+-   [x] Filter
+-   [x] Essay
+    -   [x] Title
+    -   [x] Body
 -   [ ] Album
     -   [ ] Image
     -   [ ] Description
