@@ -2,15 +2,15 @@
 
 ### To Do List
 
--   [ ] Authentication
--   [ ] Pagination
+-   [*] Authentication
+-   [*] Pagination
 -   [x] Filter
 -   [x] Essay
     -   [x] Title
     -   [x] Body
--   [ ] Album
-    -   [ ] Image
-    -   [ ] Description
--   [ ] Files
-    -   [ ] File
-    -   [ ] Description
+-   [*] Album
+    -   [*] Image
+    -   [*] Description
+-   [*] Files
+    -   [*] File
+    -   [*] Description

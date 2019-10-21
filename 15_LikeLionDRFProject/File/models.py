@@ -8,3 +8,9 @@ class File(models.Model):
         default=1,
         on_delete=models.CASCADE
     )
+    files = models.FileField(
+        blank=False,
+        null=False,
+        upload_to="files"
+    )
+    desc = models.CharField(max_length=100)
