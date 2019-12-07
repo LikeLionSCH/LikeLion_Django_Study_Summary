@@ -139,7 +139,7 @@ class EssaySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Essay
-        fields = ("pk", "title", "body")
+        fields = ("pk", "title", "body", "author_name")
 
 ```
 
