@@ -14,7 +14,7 @@
 
 |      Django      |    Django Rest Framework    |
 |:----------------:|:---------------------------:|
-| Form / ModelForm | Serializer / ModelSerialier |
+| Form / ModelForm | Serializer / ModelSerializer |
 |  **HTML Form**   |       **JSON 문자열**       |
 
 #### 기능
@@ -36,7 +36,7 @@
 - **전송 가능 형식** (HTML Form / JSON 문자열)으로 만든다.
 - 유효성 검사
 
-### Serializer vs ModelSerialier
+### Serializer vs ModelSerializer
 **Form**과 **ModelForm**이 존재하듯이 **Model**만 작성할 줄 알면<br/>
-더 간편하게 **Serializer**를 사용할 수 있게하는 **ModelSerialier**에 대해서 공부한다.<br/>
-**ModelSerialier**는 **쿼리셋**과 **모델 직렬화**를 알아서 해준다.<br/>
+더 간편하게 **Serializer**를 사용할 수 있게하는 **ModelSerializer**에 대해서 공부한다.<br/>
+**ModelSerializer**는 **쿼리셋**과 **모델 직렬화**를 알아서 해준다.<br/>
