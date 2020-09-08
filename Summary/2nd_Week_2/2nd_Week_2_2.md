@@ -12,7 +12,7 @@
          fields = ['title', 'body']
  ```
 
-|      Djagno      |    Django Rest Framework    |
+|      Django      |    Django Rest Framework    |
 |:----------------:|:---------------------------:|
 | Form / ModelForm | Serializer / ModelSerialier |
 |  **HTML Form**   |       **JSON 문자열**       |
